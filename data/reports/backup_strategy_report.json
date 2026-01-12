@@ -1,0 +1,7 @@
+{
+  "backup_type": "incr\u00e9mentale",
+  "frequency": "horaire",
+  "retention_days": 7,
+  "storage_location": "NAS interne haute disponibilit\u00e9 (ou stockage SAN local) avec r\u00e9plication vers un site secondaire",
+  "estimated_cost": 1800.0
+}

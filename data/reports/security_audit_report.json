@@ -1,0 +1,31 @@
+{
+  "security_score": 60,
+  "identified_risks": [
+    {
+      "risk": "Utilisateur ORACLE_AI poss\u00e8de le r\u00f4le DBA et est ouvert",
+      "severity": "Critique",
+      "description": "L\u2019utilisateur ORACLE_AI est une application ouverte disposant du r\u00f4le DBA complet. Cela lui donne un acc\u00e8s illimit\u00e9 \u00e0 la base, ce qui peut entra\u00eener une compromission totale de la base de donn\u00e9es.",
+      "recommendation": "Supprimer le r\u00f4le DBA d\u2019ORACLE_AI et cr\u00e9er un compte d\u00e9di\u00e9 aux t\u00e2ches d\u2019administration avec le principe du moindre privil\u00e8ge. Appliquer un mot de passe robuste et la politique de mot de passe ORA_STIG_PROFILE \u00e0 ce compte."
+    },
+    {
+      "risk": "Utilisateurs utilisant le profil DEFAULT sans v\u00e9rification de mot de passe",
+      "severity": "Haute",
+      "description": "Le profil DEFAULT autorise une r\u00e9utilisation illimit\u00e9e des mots de passe, une dur\u00e9e de vie de 180 jours et ne contient pas de fonction de v\u00e9rification. Cela augmente la probabilit\u00e9 d\u2019utilisation de mots de passe faibles ou r\u00e9utilis\u00e9s.",
+      "recommendation": "Appliquer le profil ORA_STIG_PROFILE (ou un profil similaire) \u00e0 tous les utilisateurs. Activer une fonction de v\u00e9rification de mot de passe robuste comme ORA12C_STIG_VERIFY_FUNCTION et imposer une dur\u00e9e de vie plus courte (ex. 60 jours)."
+    },
+    {
+      "risk": "Le r\u00f4le DATAPUMP_IMP_FULL_DATABASE poss\u00e8de des privil\u00e8ges \u00e9lev\u00e9s et est accord\u00e9 avec admin_option",
+      "severity": "Haute",
+      "description": "Ce r\u00f4le inclut des privil\u00e8ges tels que ALTER DATABASE, GRANT ANY PRIVILEGE, et est accord\u00e9 \u00e0 SYS avec la possibilit\u00e9 de le transmettre. Si ce r\u00f4le est accord\u00e9 \u00e0 d\u2019autres utilisateurs, il peut permettre la modification ou la suppression de la base de donn\u00e9es.",
+      "recommendation": "R\u00e9voquer le r\u00f4le DATAPUMP_IMP_FULL_DATABASE de tout utilisateur sauf SYS. Retirer l\u2019admin_option pour ce r\u00f4le et surveiller les modifications de privil\u00e8ges. Utiliser des comptes d\u00e9di\u00e9s pour l\u2019import/export avec des privil\u00e8ges limit\u00e9s."
+    }
+  ],
+  "recommendations": [
+    "Limiter l\u2019utilisation des comptes SYS et SYSTEM aux t\u00e2ches d\u2019administration exclusivement.",
+    "Appliquer un audit d\u00e9taill\u00e9 sur toutes les attributions de privil\u00e8ges et revendiquer la r\u00e9vocation des privil\u00e8ges non essentiels.",
+    "Mettre en place une surveillance d\u2019activit\u00e9 (auditing) pour les comptes \u00e0 privil\u00e8ges \u00e9lev\u00e9s.",
+    "D\u00e9sactiver ou verrouiller les comptes syst\u00e8me inutilis\u00e9s (ex. ANONYMOUS, APPQOSSYS, OJVMSYS, etc.).",
+    "Enforcer une politique de mot de passe stricte (complexit\u00e9, dur\u00e9e de vie, r\u00e9utilisation) sur l\u2019ensemble des comptes.",
+    "Restreindre l\u2019acc\u00e8s aux r\u00f4les \u00e0 haute responsabilit\u00e9 via des groupes d\u2019applications plut\u00f4t que des utilisateurs individuels."
+  ]
+}

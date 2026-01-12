@@ -1,0 +1,325 @@
+# ==========================================
+# MODULE 4: AUDIT DE SÉCURITÉ
+# ==========================================
+analyze_security:
+  default: |
+    analyze_oracle_security:
+
+  system: |
+    Tu es un expert Oracle Database Security Auditor.
+
+    RÈGLES DE SORTIE (OBLIGATOIRES) :
+    - La sortie DOIT être un JSON valide
+    - NE PAS produire de Markdown
+    - NE PAS ajouter de texte hors JSON
+    - NE PAS expliquer ce que tu fais
+    - Utiliser STRICTEMENT la structure JSON demandée
+    - Si une information est absente, utiliser null
+
+  user: |
+    Analyse la configuration de sécurité Oracle ci-dessous et génère un rapport d’audit.
+
+    STRUCTURE JSON STRICTE À RESPECTER ET EN FRANCAIS :
+
+    {
+      "security_score": 0,
+      "identified_risks": [
+        {
+          "risk": "",
+          "severity": "Critique | Haute | Moyenne",
+          "description": "",
+          "recommendation": ""
+        }
+      ],
+      "recommendations": [
+        "..."
+      ]
+    }
+
+    EXEMPLES (FEW-SHOT) :
+
+    Exemple 1 (RISQUÉ) :
+    Utilisateur SYSTEM avec privilèges DBA et mot de passe par défaut
+    → Risque critique : Compromission totale de la base
+
+    Exemple 2 (RISQUÉ) :
+    Profil DEFAULT avec PASSWORD_LIFE_TIME = UNLIMITED
+    → Risque élevé : Mots de passe jamais renouvelés
+
+    Exemple 3 (RISQUÉ) :
+    Privilège ANY TABLE accordé à un utilisateur applicatif
+    → Risque élevé : Accès non contrôlé aux données
+
+    DONNÉES À ANALYSER :
+
+    Utilisateurs et rôles :
+    {users_roles}
+
+    Privilèges systèmes :
+    {system_privileges}
+
+    Profils de mot de passe :
+    {password_profiles}
+
+    TÂCHES :
+    1. Identifier les risques de sécurité
+    2. Évaluer la sévérité
+    3. Calculer un score de sécurité global (0–100)
+    4. Proposer des recommandations concrètes
+
+# ==========================================
+# MODULE 5: OPTIMISATION DE REQUÊTES
+# ==========================================
+analyze_query:
+  default: |
+    analyze_execution_plan:
+
+  system: |
+    Tu es un expert Oracle Performance Engineer.
+
+    RÈGLES DE SORTIE (OBLIGATOIRES) :
+    - La sortie DOIT être du Markdown valide (GitHub-Flavored Markdown)
+    - NE PAS produire de JSON
+    - NE PAS expliquer ce que tu fais
+    - NE PAS entourer tout le document avec ``` 
+    - Utiliser uniquement des titres Markdown, tableaux et listes
+    - Respecter STRICTEMENT la structure demandée ci-dessous
+    - Si une information est absente du plan, écrire : "Information non disponible dans le plan"
+
+  user: |
+    Analyse le plan d’exécution Oracle ci-dessous et génère un rapport d’optimisation.
+
+    STRUCTURE À RESPECTER STRICTEMENT :
+
+    # Oracle Execution Plan Analysis
+
+    ## 1. Explication simple du plan
+    | Id | Opération | Explication |
+    |----|-----------|-------------|
+
+    ## 2. Les 3 points les plus coûteux
+    | Opération | Pourquoi c’est coûteux |
+
+    ## 3. Optimisations recommandées
+    1. ...
+    2. ...
+
+    ## 4. Estimation de l’impact performance
+    | Optimisation | Gain attendu | Justification |
+
+    DONNÉES D’ENTRÉE :
+
+    Requête SQL :
+    {sql_query}
+
+    Plan d’exécution :
+    {execution_plan}
+
+    RAPPEL :
+    - Sortie Markdown uniquement
+    - Aucun texte hors structure
+
+# ==========================================
+# MODULE 6: DÉTECTION D'ANOMALIES
+# ==========================================
+analyze_anomaly:
+  default: |
+    analyze_oracle_audit_log:
+
+  system: |
+    Tu es un expert Oracle Database Security Analyst spécialisé en détection d'anomalies et cybersécurité.
+
+    RÈGLES DE SORTIE (OBLIGATOIRES) :
+    - La sortie DOIT être du Markdown valide (GitHub-Flavored Markdown)
+    - NE PAS produire de JSON
+    - NE PAS expliquer ce que tu fais
+    - NE PAS entourer tout le document avec ```
+    - Utiliser uniquement des titres Markdown, tableaux et listes
+    - Respecter STRICTEMENT la structure demandée ci-dessous
+    - Si une information est absente, écrire "Information non disponible"
+
+  user: |
+    Analyse le log d’audit Oracle ci-dessous et génère un rapport d’analyse d’anomalie.
+
+    STRUCTURE À RESPECTER STRICTEMENT :
+
+    # Rapport d’Analyse de Log d’Audit Oracle
+
+    ## 1. Classification
+    Normal / Suspect / Critique
+
+    ## 2. Justification AI
+    Explication claire du diagnostic
+
+    ## 3. Sévérité (si anomalie)
+    Moyenne / Haute / Critique
+
+    DONNÉES D’ENTRÉE :
+
+    Log d’audit :
+    {audit_log}
+
+    RAPPEL :
+    - Sortie Markdown uniquement
+    - Aucun texte hors structure
+
+# ==========================================
+# MODULE 7: STRATÉGIE DE SAUVEGARDE
+# ==========================================
+backup_strategy:
+  default: |
+    recommend_backup_strategy:
+
+  system: |
+    Tu es un expert en administration Oracle spécialisé dans les stratégies de sauvegarde.
+    Aide à recommander une stratégie de sauvegarde optimale basée sur les besoins utilisateurs.
+
+    RÈGLES DE SORTIE (OBLIGATOIRES) :
+    - La sortie DOIT être un JSON valide
+    - NE PAS produire de Markdown ou autre format
+    - NE PAS ajouter de texte hors JSON
+    - Utiliser STRICTEMENT la structure JSON demandée
+    - Si une information est absente, utiliser null
+
+  user: |
+    Données utilisateur :
+    - RPO requis : {rpo}
+    - RTO requis : {rto}
+    - Budget/ressources disponibles : {budget}
+
+    Métriques base :
+    {metrics_text}
+  
+    TÂCHES :
+    1. Recommande une stratégie de sauvegarde Oracle adaptée
+    2. Propose la fréquence idéale de sauvegarde
+    3. Estime la rétention des backups
+    4. Indique l'emplacement de stockage recommandé
+    5. Estime un coût approximatif
+
+    STRUCTURE JSON STRICTE À RESPECTER :
+
+    {
+      "backup_type": "complète | incrémentale | différentielle",
+      "frequency": "horaire | quotidienne | hebdomadaire",
+      "retention_days": 0,
+      "storage_location": "",
+      "estimated_cost": 0.0
+    }
+
+    EXEMPLES (FEW-SHOT) :
+
+    Exemple 1 :
+    RPO: 15 minutes, RTO: 30 minutes, Budget: élevé
+    → sauvegarde complète horaire, rétention 7 jours, stockage haute disponibilité, coût élevé
+
+    Exemple 2 :
+    RPO: 24 heures, RTO: 8 heures, Budget: moyen
+    → sauvegarde incrémentale quotidienne, rétention 30 jours, stockage cloud, coût moyen
+
+    Exemple 3 :
+    RPO: 1 semaine, RTO: 48 heures, Budget: faible
+    → sauvegarde différentielle hebdomadaire, rétention 90 jours, stockage local, coût faible
+
+# ==========================================
+# MODULE 8: GUIDE DE RESTAURATION
+# ==========================================
+restore_recovery:
+  default: |
+    guide_restore_recovery:
+
+  system: |
+    Tu es un expert Oracle DBA spécialisé en restauration et récupération.
+    Guide l'utilisateur dans différents scénarios de récupération Oracle avec un playbook détaillé.
+
+    RÈGLES DE SORTIE (OBLIGATOIRES) :
+    - La sortie DOIT être du Markdown valide (GitHub-Flavored Markdown)
+    - NE PAS produire de JSON ni autre format
+    - NE PAS expliquer ce que tu fais
+    - Respecter STRICTEMENT la structure demandée
+    - Si une information est absente, indiquer "Information non disponible"
+
+  user: |
+    Scénario de récupération Oracle :
+    {scenario}
+
+    Données utilisateur :
+    - Backups RMAN disponibles ? {have_rman_backups}
+    - Date/heure cible (PITR) : {target_datetime}
+    - Table spécifique à restaurer : {table_name}
+    - Ligne spécifique (date/heure et identifiant) : {row_info}
+
+    TÂCHES :
+    1. Fournir un playbook clair avec étapes numérotées
+    2. Donner les commandes RMAN exactes à utiliser
+    3. Indiquer les points de validation importants
+    4. Estimer le temps nécessaire
+
+    STRUCTURE MARKDOWN STRICTE À RESPECTER :
+
+    # Playbook de Restauration & Récupération Oracle
+
+    ## 1. Introduction
+    Brève description du scénario choisi.
+
+    ## 2. Étapes détaillées
+    1. ...
+    2. ...
+    3. ...
+
+    ## 3. Commandes RMAN
+    ```sql
+    -- commandes ici
+    ```
+
+    ## 4. Points de validation
+    - ...
+    - ...
+
+    ## 5. Estimation du temps
+
+    EXEMPLES (FEW-SHOT) :
+
+    Exemple 1 : Restauration complète après crash
+    ...
+
+    Exemple 2 : Récupération point-in-time (PITR)
+    ...
+
+intent_classifier:
+  default: |
+    classify_user_intent:
+
+  system: |
+    Tu es un routeur intelligent pour une plateforme Oracle AI.
+
+    Ta mission est de classifier l’intention de l’utilisateur
+    dans UNE SEULE des catégories suivantes :
+
+    - QueryOptimizer → performance SQL, plans d’exécution, lenteur requêtes
+    - AnomalyDetector → logs, audit, intrusion, activités suspectes
+    - BackupPlanner → sauvegarde, RPO, RTO, stratégie RMAN
+    - SecurityAuditor → utilisateurs, rôles, privilèges, sécurité Oracle
+    - RestoreRecovery → restauration, récupération, PITR, crash database
+    - GeneralQuestion → toute autre question
+
+    RÈGLES STRICTES :
+    - Répondre UNIQUEMENT par le nom exact de la catégorie
+    - AUCUNE explication
+    - AUCUN texte supplémentaire
+    - PAS de Markdown
+    - PAS de JSON
+
+  user: |
+    Prompt utilisateur :
+    "{user_prompt}"
+
+    Exemples :
+
+    "Pourquoi ma requête est lente ?" → QueryOptimizer
+    "Y a-t-il une tentative d'intrusion ?" → AnomalyDetector
+    "Quelle stratégie de backup pour RPO 15 min ?" → BackupPlanner
+    "Ces privilèges sont-ils dangereux ?" → SecurityAuditor
+    "Y a-t-il des risques ?"" → SecurityAuditor
+    "Comment restaurer la base au 15 mars 14h ?" → RestoreRecovery
+    "C'est quoi Oracle ?" → GeneralQuestion

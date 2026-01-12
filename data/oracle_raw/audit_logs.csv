@@ -1,0 +1,735 @@
+event_timestamp,userid,userhost,priv$used,ACTION#,obj$name,sqltext,comment$text,returncode
+2026-01-11 21:33:54.703650,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=52405)),0
+2026-01-11 21:33:29.842391,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=62530)),0
+2026-01-11 21:33:15.927082,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-11 21:32:38.633106,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=44127)),0
+2026-01-11 21:32:13.395331,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-11 21:32:13.205844,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-11 21:31:35.943781,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-11 21:31:33.241342,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=47097)),0
+2026-01-11 21:30:40.838383,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-11 21:30:38.016491,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=36308)),0
+2026-01-11 21:29:43.797050,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=27296)),0
+2026-01-11 21:29:03.876873,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=59603)),0
+2026-01-11 21:24:32.390104,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-11 21:24:32.334897,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=45481)),0
+2026-01-11 21:23:49.454415,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-11 21:22:14.389540,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=57728)),0
+2026-01-11 15:20:58.991603,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-11 15:19:44.485194,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=169.254.169.254)(PORT=36862)),0
+2026-01-11 15:09:35.321237,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=169.254.169.254)(PORT=18014)),0
+2026-01-11 14:46:32.411938,ORACLE_AI,Achrafs-MacBook-Pro,,102,,,,0
+2026-01-11 13:37:26.964460,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-11 13:23:03.732880,ORACLE_AI,Achrafs-MacBook-Pro,,47,V_$RMAN_STATUS," SELECT
+    stamp,
+    operation,
+    object_name,
+    status
+FROM
+    v$rman_status
+WHERE
+    operation = 'RECOVER TABLE'",,904
+2026-01-11 13:23:03.559384,ORACLE_AI,Achrafs-MacBook-Pro,,47,V_$RMAN_STATUS," SELECT
+    stamp,
+    operation,
+    object_name,
+    status
+FROM
+    v$rman_status
+WHERE
+    operation = 'RECOVER TABLE'",,904
+2026-01-11 13:23:03.376098,ORACLE_AI,Achrafs-MacBook-Pro,,47,V_$RMAN_STATUS," SELECT
+    stamp,
+    operation,
+    object_name,
+    status
+FROM
+    v$rman_status
+WHERE
+    operation = 'RECOVER TABLE'",,904
+2026-01-11 13:23:02.473118,ORACLE_AI,Achrafs-MacBook-Pro,,47,V_$RMAN_STATUS," SELECT
+    stamp,
+    operation,
+    object_name,
+    status
+FROM
+    v$rman_status
+WHERE
+    operation = 'RECOVER TABLE'",,904
+2026-01-11 13:22:48.526798,ORACLE_AI,Achrafs-MacBook-Pro,,47,V_$RMAN_STATUS," SELECT
+    start_time,
+    operation,
+    object_name,
+    status
+FROM
+    v$rman_status
+WHERE
+    operation = 'RECOVER TABLE'",,904
+2026-01-11 13:22:04.820031,ORACLE_AI,Achrafs-MacBook-Pro,,47,V_$RMAN_STATUS,"select stamp as restore_date,
+       operation as scenario,
+       object_type as target,
+       status as status,
+       round(
+          elapsed_seconds / 60,
+          2
+       ) as estimated_time_min
+  from v$rman_status
+ where operation in ( 'RESTORE',
+                      'RECOVER',
+                      'RECOVER DATABASE',
+                      'RECOVER TABLE' )
+ order by start_time desc",,904
+2026-01-11 13:20:26.588157,ORACLE_AI,Achrafs-MacBook-Pro,,47,V_$RMAN_STATUS,"SELECT
+    start_time                              AS restore_date,
+    operation                               AS scenario,
+    object_type                             AS target,
+    status                                  AS status,
+    ROUND(elapsed_seconds / 60, 2)          AS estimated_time_min
+FROM
+    v$rman_status
+WHERE
+    operation IN (
+        'RESTORE',
+        'RECOVER',
+        'RECOVER DATABASE',
+        'RECOVER TABLE'
+    )
+ORDER BY
+    start_time DESC",,904
+2026-01-11 13:20:19.913410,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=54831)),0
+2026-01-11 13:20:16.415906,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=20309)),0
+2026-01-10 23:50:00.332978,ORACLE_AI,565bec6010ab,,3,DBA_TABLES,"SELECT SUM(num_rows) AS total_rows_critical, SUM(blocks * 8 / 1024)  FROM dba_tables t WHERE t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:50:00.332178,ORACLE_AI,565bec6010ab,,3,IMSVC$,"SELECT SUM(num_rows) AS total_rows_critical, SUM(blocks * 8 / 1024)  FROM dba_tables t WHERE t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:50:00.331885,ORACLE_AI,565bec6010ab,,3,DEFERRED_STG$,"SELECT SUM(num_rows) AS total_rows_critical, SUM(blocks * 8 / 1024)  FROM dba_tables t WHERE t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:50:00.331638,ORACLE_AI,565bec6010ab,,3,X$KSPPI,"SELECT SUM(num_rows) AS total_rows_critical, SUM(blocks * 8 / 1024)  FROM dba_tables t WHERE t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:50:00.331440,ORACLE_AI,565bec6010ab,,3,X$KSPPCV,"SELECT SUM(num_rows) AS total_rows_critical, SUM(blocks * 8 / 1024)  FROM dba_tables t WHERE t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:50:00.331198,ORACLE_AI,565bec6010ab,,3,USER$,"SELECT SUM(num_rows) AS total_rows_critical, SUM(blocks * 8 / 1024)  FROM dba_tables t WHERE t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:50:00.331012,ORACLE_AI,565bec6010ab,,3,OBJ$,"SELECT SUM(num_rows) AS total_rows_critical, SUM(blocks * 8 / 1024)  FROM dba_tables t WHERE t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:50:00.330572,ORACLE_AI,565bec6010ab,,3,_CURRENT_EDITION_OBJ,"SELECT SUM(num_rows) AS total_rows_critical, SUM(blocks * 8 / 1024)  FROM dba_tables t WHERE t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:50:00.330353,ORACLE_AI,565bec6010ab,,3,USER$,"SELECT SUM(num_rows) AS total_rows_critical, SUM(blocks * 8 / 1024)  FROM dba_tables t WHERE t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:50:00.330196,ORACLE_AI,565bec6010ab,,3,OBJ$,"SELECT SUM(num_rows) AS total_rows_critical, SUM(blocks * 8 / 1024)  FROM dba_tables t WHERE t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:50:00.330049,ORACLE_AI,565bec6010ab,,3,USER_EDITIONING$,"SELECT SUM(num_rows) AS total_rows_critical, SUM(blocks * 8 / 1024)  FROM dba_tables t WHERE t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:50:00.329593,ORACLE_AI,565bec6010ab,,3,USER_EDITIONING$,"SELECT SUM(num_rows) AS total_rows_critical, SUM(blocks * 8 / 1024)  FROM dba_tables t WHERE t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:50:00.328981,ORACLE_AI,565bec6010ab,,3,USER$,"SELECT SUM(num_rows) AS total_rows_critical, SUM(blocks * 8 / 1024)  FROM dba_tables t WHERE t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:50:00.328759,ORACLE_AI,565bec6010ab,,3,OBJ$,"SELECT SUM(num_rows) AS total_rows_critical, SUM(blocks * 8 / 1024)  FROM dba_tables t WHERE t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:50:00.328560,ORACLE_AI,565bec6010ab,,3,EXTERNAL_TAB$,"SELECT SUM(num_rows) AS total_rows_critical, SUM(blocks * 8 / 1024)  FROM dba_tables t WHERE t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:50:00.328358,ORACLE_AI,565bec6010ab,,3,TAB$,"SELECT SUM(num_rows) AS total_rows_critical, SUM(blocks * 8 / 1024)  FROM dba_tables t WHERE t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:50:00.327116,ORACLE_AI,565bec6010ab,,3,OBJ$,"SELECT SUM(num_rows) AS total_rows_critical, SUM(blocks * 8 / 1024)  FROM dba_tables t WHERE t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:50:00.326508,ORACLE_AI,565bec6010ab,,3,SEG$,"SELECT SUM(num_rows) AS total_rows_critical, SUM(blocks * 8 / 1024)  FROM dba_tables t WHERE t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:50:00.326204,ORACLE_AI,565bec6010ab,,3,TS$,"SELECT SUM(num_rows) AS total_rows_critical, SUM(blocks * 8 / 1024)  FROM dba_tables t WHERE t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:50:00.325917,ORACLE_AI,565bec6010ab,,3,USER$,"SELECT SUM(num_rows) AS total_rows_critical, SUM(blocks * 8 / 1024)  FROM dba_tables t WHERE t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:50:00.324375,ORACLE_AI,565bec6010ab,,3,CRITICAL_TABLES,"SELECT SUM(num_rows) AS total_rows_critical, SUM(blocks * 8 / 1024)  FROM dba_tables t WHERE t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:14.768960,ORACLE_AI,565bec6010ab,,3,CRITICAL_TABLES,SELECT * FROM critical_tables,,942
+2026-01-10 23:48:11.156920,ORACLE_AI,565bec6010ab,,3,ALL_TABLES,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:11.156466,ORACLE_AI,565bec6010ab,,3,IMSVC$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:11.155877,ORACLE_AI,565bec6010ab,,3,DEFERRED_STG$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:11.155329,ORACLE_AI,565bec6010ab,,3,X$KSPPI,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:11.120415,ORACLE_AI,565bec6010ab,,3,X$KSPPCV,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:11.120167,ORACLE_AI,565bec6010ab,,3,USER$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:11.119814,ORACLE_AI,565bec6010ab,,3,OBJ$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:11.119289,ORACLE_AI,565bec6010ab,,3,_CURRENT_EDITION_OBJ,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:11.118932,ORACLE_AI,565bec6010ab,,3,USER$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:11.118554,ORACLE_AI,565bec6010ab,,3,OBJ$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:11.117762,ORACLE_AI,565bec6010ab,,3,USER_EDITIONING$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:11.117530,ORACLE_AI,565bec6010ab,,3,USER_EDITIONING$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:11.117356,ORACLE_AI,565bec6010ab,,3,USER$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:11.116825,ORACLE_AI,565bec6010ab,,3,OBJ$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:11.115440,ORACLE_AI,565bec6010ab,,3,EXTERNAL_TAB$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:11.113983,ORACLE_AI,565bec6010ab,,3,TAB$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:11.113326,ORACLE_AI,565bec6010ab,,3,OBJ$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:11.112873,ORACLE_AI,565bec6010ab,,3,SEG$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:11.112530,ORACLE_AI,565bec6010ab,,3,TS$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:11.112045,ORACLE_AI,565bec6010ab,,3,USER$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:11.110981,ORACLE_AI,565bec6010ab,,3,OBJAUTH$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:11.110328,ORACLE_AI,565bec6010ab,,3,X$KZSRO,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:11.107833,ORACLE_AI,565bec6010ab,,3,CRITICAL_TABLES,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    all_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:06.009504,ORACLE_AI,565bec6010ab,,3,USER_TABLES,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    user_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:06.009214,ORACLE_AI,565bec6010ab,,3,IMSVC$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    user_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:06.008924,ORACLE_AI,565bec6010ab,,3,X$KSPPI,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    user_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:06.008570,ORACLE_AI,565bec6010ab,,3,X$KSPPCV,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    user_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:06.008281,ORACLE_AI,565bec6010ab,,3,USER$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    user_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:06.007571,ORACLE_AI,565bec6010ab,,3,OBJ$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    user_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:06.006913,ORACLE_AI,565bec6010ab,,3,DEFERRED_STG$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    user_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:06.005569,ORACLE_AI,565bec6010ab,,3,_CURRENT_EDITION_OBJ,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    user_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:06.005377,ORACLE_AI,565bec6010ab,,3,USER$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    user_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:06.004314,ORACLE_AI,565bec6010ab,,3,OBJ$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    user_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:06.003403,ORACLE_AI,565bec6010ab,,3,USER_EDITIONING$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    user_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:06.003188,ORACLE_AI,565bec6010ab,,3,USER_EDITIONING$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    user_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:06.002539,ORACLE_AI,565bec6010ab,,3,USER$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    user_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:06.001664,ORACLE_AI,565bec6010ab,,3,OBJ$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    user_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:06.001395,ORACLE_AI,565bec6010ab,,3,EXTERNAL_TAB$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    user_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:06.000832,ORACLE_AI,565bec6010ab,,3,TAB$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    user_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:06.000608,ORACLE_AI,565bec6010ab,,3,OBJ$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    user_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:05.999354,ORACLE_AI,565bec6010ab,,3,SEG$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    user_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:05.998052,ORACLE_AI,565bec6010ab,,3,TS$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    user_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:48:05.994125,ORACLE_AI,565bec6010ab,,3,CRITICAL_TABLES,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical
+FROM
+    user_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:44:31.515971,ORACLE_AI,565bec6010ab,,3,DBA_TABLES,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical  -- approx size in MB (8KB blocks)
+FROM
+    dba_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:44:31.515243,ORACLE_AI,565bec6010ab,,3,IMSVC$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical  -- approx size in MB (8KB blocks)
+FROM
+    dba_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:44:31.514969,ORACLE_AI,565bec6010ab,,3,DEFERRED_STG$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical  -- approx size in MB (8KB blocks)
+FROM
+    dba_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:44:31.513202,ORACLE_AI,565bec6010ab,,3,X$KSPPI,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical  -- approx size in MB (8KB blocks)
+FROM
+    dba_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:44:31.511471,ORACLE_AI,565bec6010ab,,3,X$KSPPCV,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical  -- approx size in MB (8KB blocks)
+FROM
+    dba_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:44:31.510316,ORACLE_AI,565bec6010ab,,3,USER$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical  -- approx size in MB (8KB blocks)
+FROM
+    dba_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:44:31.509251,ORACLE_AI,565bec6010ab,,3,OBJ$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical  -- approx size in MB (8KB blocks)
+FROM
+    dba_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:44:31.507757,ORACLE_AI,565bec6010ab,,3,_CURRENT_EDITION_OBJ,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical  -- approx size in MB (8KB blocks)
+FROM
+    dba_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:44:31.507418,ORACLE_AI,565bec6010ab,,3,USER$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical  -- approx size in MB (8KB blocks)
+FROM
+    dba_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:44:31.505731,ORACLE_AI,565bec6010ab,,3,OBJ$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical  -- approx size in MB (8KB blocks)
+FROM
+    dba_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:44:31.505437,ORACLE_AI,565bec6010ab,,3,USER_EDITIONING$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical  -- approx size in MB (8KB blocks)
+FROM
+    dba_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:44:31.502590,ORACLE_AI,565bec6010ab,,3,USER_EDITIONING$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical  -- approx size in MB (8KB blocks)
+FROM
+    dba_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:44:31.501836,ORACLE_AI,565bec6010ab,,3,USER$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical  -- approx size in MB (8KB blocks)
+FROM
+    dba_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:44:31.498921,ORACLE_AI,565bec6010ab,,3,OBJ$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical  -- approx size in MB (8KB blocks)
+FROM
+    dba_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:44:31.497397,ORACLE_AI,565bec6010ab,,3,EXTERNAL_TAB$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical  -- approx size in MB (8KB blocks)
+FROM
+    dba_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:44:31.496779,ORACLE_AI,565bec6010ab,,3,TAB$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical  -- approx size in MB (8KB blocks)
+FROM
+    dba_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:44:31.496169,ORACLE_AI,565bec6010ab,,3,OBJ$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical  -- approx size in MB (8KB blocks)
+FROM
+    dba_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:44:31.495978,ORACLE_AI,565bec6010ab,,3,SEG$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical  -- approx size in MB (8KB blocks)
+FROM
+    dba_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:44:31.494709,ORACLE_AI,565bec6010ab,,3,TS$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical  -- approx size in MB (8KB blocks)
+FROM
+    dba_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:44:31.492299,ORACLE_AI,565bec6010ab,,3,USER$,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical  -- approx size in MB (8KB blocks)
+FROM
+    dba_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:44:31.452753,ORACLE_AI,565bec6010ab,,3,CRITICAL_TABLES,"SELECT
+    SUM(num_rows) AS total_rows_critical,
+    SUM(blocks * 8 / 1024) AS size_mb_critical  -- approx size in MB (8KB blocks)
+FROM
+    dba_tables t
+WHERE
+    t.table_name IN (SELECT table_name FROM critical_tables)",,942
+2026-01-10 23:18:43.151967,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-10 23:18:42.671251,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=27551)),0
+2026-01-10 23:18:28.105402,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-10 23:15:23.155719,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=16243)),0
+2026-01-10 23:12:35.564999,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-10 23:12:35.162174,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=36857)),0
+2026-01-10 23:11:53.264581,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-10 23:11:52.757094,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=59849)),0
+2026-01-10 23:10:52.469622,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-10 23:08:04.313816,ORACLE_AI,Achrafs-MacBook-Pro,,47,AUD$,"SELECT COMMENT_TEXT
+FROM
+    SYS.AUD$
+WHERE
+    NTIMESTAMP# > SYSDATE - 30 -- last 30 days, adjust as needed
+ORDER BY
+    NTIMESTAMP# DESC",,904
+2026-01-10 23:07:56.946134,ORACLE_AI,Achrafs-MacBook-Pro,,47,AUD$,"SELECT COMMENTTEXT
+FROM
+    SYS.AUD$
+WHERE
+    NTIMESTAMP# > SYSDATE - 30 -- last 30 days, adjust as needed
+ORDER BY
+    NTIMESTAMP# DESC",,904
+2026-01-10 23:07:48.759431,ORACLE_AI,Achrafs-MacBook-Pro,,47,AUD$,"SELECT
+    NTIMESTAMP# AS event_timestamp,
+    USERID,
+    USERHOST,
+    ACTION#,
+    OBJ$NAME,
+    SQLTEXT,
+    COMMENTTEXT,
+    RETURN_CODE
+FROM
+    SYS.AUD$
+WHERE
+    NTIMESTAMP# > SYSDATE - 30 -- last 30 days, adjust as needed
+ORDER BY
+    NTIMESTAMP# DESC",,904
+2026-01-10 23:06:45.272546,ORACLE_AI,Achrafs-MacBook-Pro,,47,AUD$,"SELECT SQL_TEXT
+FROM
+    SYS.AUD$
+WHERE
+    NTIMESTAMP# > SYSDATE - 30 -- last 30 days, adjust as needed
+ORDER BY
+    NTIMESTAMP# DESC",,904
+2026-01-10 23:05:05.481704,ORACLE_AI,Achrafs-MacBook-Pro,,47,AUD$,"SELECT ACTION_NAME
+FROM
+    SYS.AUD$
+WHERE
+    NTIMESTAMP# > SYSDATE - 30 -- last 30 days, adjust as needed
+ORDER BY
+    NTIMESTAMP# DESC",,904
+2026-01-10 23:04:56.527400,ORACLE_AI,Achrafs-MacBook-Pro,,47,AUD$,"SELECT
+    ACTION_NAME,
+    OBJ_NAME,
+    OBJ_PRIVILEGE,
+    SQL_TEXT,
+    COMMENT_TEXT,
+    RETURN_CODE
+FROM
+    SYS.AUD$
+WHERE
+    NTIMESTAMP# > SYSDATE - 30 -- last 30 days, adjust as needed
+ORDER BY
+    NTIMESTAMP# DESC",,904
+2026-01-10 23:04:45.253513,ORACLE_AI,Achrafs-MacBook-Pro,,47,AUD$,"SELECT
+    NTIMESTAMP# AS event_timestamp,
+    USERID,
+    USERHOST,
+    ACTION_NAME,
+    OBJ_NAME,
+    OBJ_PRIVILEGE,
+    SQL_TEXT,
+    COMMENT_TEXT,
+    RETURN_CODE
+FROM
+    SYS.AUD$
+WHERE
+    NTIMESTAMP# > SYSDATE - 30 -- last 30 days, adjust as needed
+ORDER BY
+    NTIMESTAMP# DESC",,904
+2026-01-10 23:03:55.443143,ORACLE_AI,Achrafs-MacBook-Pro,,47,AUD$,"SELECT
+    NTIMESTAMP# AS event_timestamp,
+    USERNAME    
+FROM
+    SYS.AUD$
+WHERE
+    NTIMESTAMP# > SYSDATE - 30 -- last 30 days, adjust as needed
+ORDER BY
+    NTIMESTAMP# DESC",,904
+2026-01-10 23:03:47.987608,ORACLE_AI,Achrafs-MacBook-Pro,,47,AUD$,"SELECT
+    NTIMESTAMP# AS event_timestamp,
+    USERNAME,
+    USERHOST
+FROM
+    SYS.AUD$
+WHERE
+    NTIMESTAMP# > SYSDATE - 30 -- last 30 days, adjust as needed
+ORDER BY
+    NTIMESTAMP# DESC",,904
+2026-01-10 23:03:05.554555,ORACLE_AI,Achrafs-MacBook-Pro,,47,AUD$,"SELECT
+    NTIMESTAMP# AS event_timestamp,
+    USERNAME,
+    USERHOST,
+    ACTION_NAME,
+    OBJ_NAME,
+    OBJ_PRIVILEGE,
+    SQL_TEXT,
+    COMMENT_TEXT
+FROM
+    SYS.AUD$
+WHERE
+    NTIMESTAMP# > SYSDATE - 30 -- last 30 days, adjust as needed
+ORDER BY
+    NTIMESTAMP# DESC",,904
+2026-01-10 23:02:57.678255,ORACLE_AI,Achrafs-MacBook-Pro,,47,AUD$,"SELECT
+    NTIMESTAMP# AS event_timestamp,
+    USERNAME,
+    USERHOST,
+    ACTION_NAME,
+    OBJ_NAME,
+    OBJ_PRIVILEGE,
+    SQL_TEXT,
+    COMMENT_TEXT,
+    RETURN_CODE
+FROM
+    SYS.AUD$
+WHERE
+    NTIMESTAMP# > SYSDATE - 30 -- last 30 days, adjust as needed
+ORDER BY
+    NTIMESTAMP# DESC",,904
+2026-01-10 23:02:49.135755,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=17672)),0
+2026-01-10 23:02:38.869894,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=45017)),0
+2026-01-10 23:02:29.081671,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-10 23:02:28.876620,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=28316)),0
+2026-01-10 23:01:03.922794,ORACLE_AI,565bec6010ab,,47,AUD$,"SELECT NTIMESTAMP# AS event_timestamp, USERNAME, USERHOST, ACTION_NAME, OBJ_NAME, OBJ_PRIVILEGE, SQL_TEXT, COMMENT_TEXT, RETURN_CODE
+            FROM
+                SYS.AUD$
+            WHERE
+                NTIMESTAMP# > SYSDATE - 30 -- last 30 days, adjust as needed
+            ORDER BY
+                NTIMESTAMP# DESC",,904
+2026-01-10 22:37:06.894768,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-10 22:37:06.322833,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=38605)),0
+2026-01-10 22:36:12.424793,ORACLE_AI,565bec6010ab,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=127.0.0.1)(PORT=36086)),0
+2026-01-10 22:36:12.273960,ORACLE_AI,565bec6010ab,,101,,,,0
+2026-01-10 22:36:06.344403,ORACLE_AI,565bec6010ab,,3,V$SQLSTAT,"SELECT sql_id, executions, elapsed_time FROM v$sqlstat WHERE ROWNUM <= 5",,942
+2026-01-10 22:36:06.339835,ORACLE_AI,565bec6010ab,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=127.0.0.1)(PORT=40106)),0
+2026-01-10 22:36:06.301700,ORACLE_AI,565bec6010ab,,101,,,,0
+2026-01-10 22:36:04.566014,ORACLE_AI,565bec6010ab,,3,V$SQLSTAT,"SELECT sql_id, executions, elapsed_time FROM v$sqlstat WHERE ROWNUM <= 5",,942
+2026-01-10 22:36:04.470063,ORACLE_AI,565bec6010ab,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=127.0.0.1)(PORT=40104)),0
+2026-01-10 22:33:10.271395,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-10 22:33:08.512166,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=64553)),0
+2026-01-09 14:32:22.334098,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-09 14:32:21.581381,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=52598)),0
+2026-01-09 14:31:49.576814,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-09 14:31:49.518539,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=28462)),0
+2026-01-09 14:31:41.457546,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-09 14:31:41.398415,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=40471)),0
+2026-01-09 14:30:26.890021,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-09 14:30:26.831060,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=46436)),0
+2026-01-09 14:30:05.355274,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-09 14:30:05.300784,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=26783)),0
+2026-01-09 14:28:46.635760,ORACLE_AI,Achrafs-MacBook-Pro,,101,,,,0
+2026-01-09 14:28:46.527992,ORACLE_AI,Achrafs-MacBook-Pro,5.0,100,,,Authenticated by: DATABASE;AUTHENTICATED IDENTITY: ORACLE_AI; Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.65.1)(PORT=26341)),0

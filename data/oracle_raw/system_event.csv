@@ -1,0 +1,43 @@
+event,total_waits,time_waited
+Disk file operations I/O,71,2
+control file sequential read,567,2
+control file parallel write,436,21
+read by other session,3,0
+log file sync,23,3
+db file sequential read,3237,109
+db file scattered read,202,12
+db file parallel read,4,2
+sort segment request,1,100
+index (re)build lock or pin object,102,0
+row cache mutex,62,6
+cursor: pin S,10,2
+cursor: pin S wait on X,2,1
+latch: shared pool,552,18
+library cache load lock,1,0
+library cache: mutex X,78,4
+library cache: bucket mutex X,33,5
+PX Deq Credit: need buffer,20,1
+PX Deq Credit: send blkd,9,1
+PX Deq: Parse Reply,144,57
+PX Deq: Execute Reply,648,191
+PX Deq: Execution Msg,596,499
+PX Deq: Table Q Normal,170,230
+SQL*Net message to client,827,0
+SQL*Net more data to client,8,0
+SQL*Net message from client,836,291973
+SQL*Net break/reset to client,44,3
+latch free,10,1
+latch: call allocation,22,0
+PGA memory operation,3703,7
+latch: enqueue hash chains,2,0
+asynch descriptor resize,18,0
+resmgr:plan change,1,0
+reliable message,1,0
+latch: active service list,15,0
+PX qref latch,1,0
+PX Deq: Join ACK,144,27
+PX Deq Credit: free buffer,5,0
+PX Deq: Signal ACK EXT,144,3
+PX Deq: Slave Session Stats,288,3
+enq: PS - contention,67,1
+latch: parallel query alloc buffer,2,0

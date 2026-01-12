@@ -1,0 +1,3694 @@
+[
+  {
+    "grantee":"ORACLE_AI",
+    "privilege":"SELECT ANY DICTIONARY"
+  },
+  {
+    "grantee":"PDB_DBA",
+    "privilege":"CREATE PLUGGABLE DATABASE"
+  },
+  {
+    "grantee":"PDB_DBA",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"ORACLE_AI",
+    "privilege":"UNLIMITED TABLESPACE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"INHERIT ANY PRIVILEGES"
+  },
+  {
+    "grantee":"RESOURCE",
+    "privilege":"CREATE SEQUENCE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER SESSION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE TABLESPACE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER TABLESPACE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER USER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ROLLBACK SEGMENT"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY CLUSTER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY SYNONYM"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"SELECT ANY SEQUENCE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP PROFILE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY MATERIALIZED VIEW"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"UNDER ANY VIEW"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY CONTEXT"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY OUTLINE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ON COMMIT REFRESH"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"SELECT ANY TRANSACTION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY MINING MODEL"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"SELECT ANY MINING MODEL"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY CUBE DIMENSION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"SELECT ANY CUBE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE CUBE BUILD PROCESS"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE SQL TRANSLATION PROFILE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY SQL TRANSLATION PROFILE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE LOCKDOWN PROFILE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP LOCKDOWN PROFILE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE CREDENTIAL"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY CREDENTIAL"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"LOGMINING"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY MEASURE FOLDER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ATTRIBUTE DIMENSION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY ATTRIBUTE DIMENSION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY ATTRIBUTE DIMENSION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY HIERARCHY"
+  },
+  {
+    "grantee":"AUDSYS",
+    "privilege":"CREATE TABLE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER USER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY CLUSTER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE PUBLIC SYNONYM"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE VIEW"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY VIEW"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE OPERATOR"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ON COMMIT REFRESH"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DEBUG CONNECT SESSION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY RULE SET"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"EXECUTE ANY RULE SET"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE RULE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY RULE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY SQL PROFILE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"MANAGE ANY FILE GROUP"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY ASSEMBLY"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY CUBE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY MEASURE FOLDER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP LOCKDOWN PROFILE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"LOGMINING"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY HIERARCHY"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY ANALYTIC VIEW"
+  },
+  {
+    "grantee":"SYSTEM",
+    "privilege":"CREATE TABLE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE ANY TABLE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE ANY SEQUENCE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"INSERT ANY TABLE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE ANY SQL PROFILE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"ADMINISTER SQL MANAGEMENT OBJECT"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP ANY PROCEDURE"
+  },
+  {
+    "grantee":"DATAPUMP_EXP_FULL_DATABASE",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"ALTER USER"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"ALTER PROFILE"
+  },
+  {
+    "grantee":"RECOVERY_CATALOG_OWNER",
+    "privilege":"CREATE VIEW"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"CREATE JOB"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"CREATE TABLESPACE"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"DROP PROFILE"
+  },
+  {
+    "grantee":"EXP_FULL_DATABASE",
+    "privilege":"READ ANY FILE GROUP"
+  },
+  {
+    "grantee":"SCHEDULER_ADMIN",
+    "privilege":"MANAGE SCHEDULER"
+  },
+  {
+    "grantee":"SYSBACKUP",
+    "privilege":"DROP TABLESPACE"
+  },
+  {
+    "grantee":"SYSBACKUP",
+    "privilege":"SELECT ANY TRANSACTION"
+  },
+  {
+    "grantee":"SYSKM",
+    "privilege":"ADMINISTER KEY MANAGEMENT"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"CREATE EXTERNAL JOB"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"CREATE TABLESPACE"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"ALTER DATABASE LINK"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"CREATE ANY TRIGGER"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"ADMINISTER DATABASE TRIGGER"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"LOCK ANY TABLE"
+  },
+  {
+    "grantee":"JAVADEBUGPRIV",
+    "privilege":"DEBUG CONNECT SESSION"
+  },
+  {
+    "grantee":"MDSYS",
+    "privilege":"CREATE SEQUENCE"
+  },
+  {
+    "grantee":"MDSYS",
+    "privilege":"INHERIT ANY PRIVILEGES"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"SELECT ANY TABLE"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"DROP ANY CUBE BUILD PROCESS"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"DROP ANY VIEW"
+  },
+  {
+    "grantee":"OLAP_USER",
+    "privilege":"CREATE TABLE"
+  },
+  {
+    "grantee":"OLAP_USER",
+    "privilege":"CREATE CUBE"
+  },
+  {
+    "grantee":"OLAP_USER",
+    "privilege":"CREATE JOB"
+  },
+  {
+    "grantee":"DV_REALM_RESOURCE",
+    "privilege":"CREATE SYNONYM"
+  },
+  {
+    "grantee":"DV_REALM_RESOURCE",
+    "privilege":"CREATE TRIGGER"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"CREATE ANY MATERIALIZED VIEW"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"CREATE ANY OPERATOR"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"CREATE ANY SEQUENCE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"ALTER ANY DIMENSION"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"ALTER ANY PROCEDURE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"DROP ANY PROCEDURE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"DROP ANY TYPE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER SYSTEM"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"RESTRICTED SESSION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY TABLE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"LOCK ANY TABLE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"UPDATE ANY TABLE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY VIEW"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"FORCE TRANSACTION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE PROCEDURE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE TRIGGER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY TRIGGER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER PROFILE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY MATERIALIZED VIEW"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE LIBRARY"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY CONTEXT"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DEBUG CONNECT ANY"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE EVALUATION CONTEXT"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY EVALUATION CONTEXT"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY EVALUATION CONTEXT"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE RULE SET"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY RULE SET"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY JOB"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ADMINISTER ANY SQL TUNING SET"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DELETE ANY CUBE DIMENSION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE MEASURE FOLDER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DELETE ANY MEASURE FOLDER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"UPDATE ANY CUBE BUILD PROCESS"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"FLASHBACK ARCHIVE ADMINISTER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE PLUGGABLE DATABASE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"SELECT ANY MEASURE FOLDER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY CUBE BUILD PROCESS"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"UNLIMITED TABLESPACE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP USER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE CLUSTER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY INDEX"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY SYNONYM"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP PUBLIC SYNONYM"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY VIEW"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP PUBLIC DATABASE LINK"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY TRIGGER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE PROFILE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"EXECUTE ANY TYPE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY OPERATOR"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY INDEXTYPE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"UNDER ANY VIEW"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"FLASHBACK ANY TABLE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY RULE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"SELECT ANY TRANSACTION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY EDITION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"EXECUTE ASSEMBLY"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"SELECT ANY CUBE DIMENSION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY MEASURE FOLDER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE CUBE BUILD PROCESS"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY CUBE BUILD PROCESS"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"FLASHBACK ARCHIVE ADMINISTER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE LOCKDOWN PROFILE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"SELECT ANY CUBE BUILD PROCESS"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE ANY CLUSTER"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE DATABASE LINK"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"UPDATE ANY TABLE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE ANY TYPE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE ANY LIBRARY"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP ROLLBACK SEGMENT"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP ANY DIRECTORY"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP ANY CONTEXT"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"ALTER ANY TRIGGER"
+  },
+  {
+    "grantee":"GSMUSER_ROLE",
+    "privilege":"ALTER SYSTEM"
+  },
+  {
+    "grantee":"DATAPUMP_IMP_FULL_DATABASE",
+    "privilege":"GRANT ANY ROLE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"AUDIT SYSTEM"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"ALTER DATABASE"
+  },
+  {
+    "grantee":"RECOVERY_CATALOG_OWNER",
+    "privilege":"CREATE PROCEDURE"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"ADMINISTER SQL MANAGEMENT OBJECT"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"CREATE ROLE"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"DROP USER"
+  },
+  {
+    "grantee":"AQ_ADMINISTRATOR_ROLE",
+    "privilege":"CREATE RULE SET"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"MANAGE ANY QUEUE"
+  },
+  {
+    "grantee":"OEM_ADVISOR",
+    "privilege":"ADMINISTER SQL TUNING SET"
+  },
+  {
+    "grantee":"SYSBACKUP",
+    "privilege":"ALTER DATABASE"
+  },
+  {
+    "grantee":"SYSBACKUP",
+    "privilege":"ALTER SYSTEM"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"CREATE PUBLIC DATABASE LINK"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"CREATE ANY TABLE"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"DROP TABLESPACE"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"ALTER TABLESPACE"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"ALTER SESSION"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"SET CONTAINER"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"CREATE ANY INDEX"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"ALTER ANY TABLE"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"CREATE ANY TABLE"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"ALTER ANY TRIGGER"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"ALTER ANY SEQUENCE"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"CREATE ANY SEQUENCE"
+  },
+  {
+    "grantee":"CTXSYS",
+    "privilege":"INHERIT ANY PRIVILEGES"
+  },
+  {
+    "grantee":"CTXSYS",
+    "privilege":"MANAGE SCHEDULER"
+  },
+  {
+    "grantee":"CTXAPP",
+    "privilege":"CREATE SEQUENCE"
+  },
+  {
+    "grantee":"MDSYS",
+    "privilege":"DROP PUBLIC SYNONYM"
+  },
+  {
+    "grantee":"ORDDATA",
+    "privilege":"UNLIMITED TABLESPACE"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"UPDATE ANY TABLE"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"CREATE ANY CUBE DIMENSION"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"DROP ANY CUBE DIMENSION"
+  },
+  {
+    "grantee":"OLAP_USER",
+    "privilege":"CREATE VIEW"
+  },
+  {
+    "grantee":"OLAP_USER",
+    "privilege":"CREATE SEQUENCE"
+  },
+  {
+    "grantee":"DV_REALM_RESOURCE",
+    "privilege":"CREATE TABLE"
+  },
+  {
+    "grantee":"DV_REALM_RESOURCE",
+    "privilege":"CREATE VIEW"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"CREATE ANY CONTEXT"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"CREATE ANY OUTLINE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"CREATE ANY TRIGGER"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"ALTER ANY TYPE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"SELECT ANY SEQUENCE"
+  },
+  {
+    "grantee":"RESOURCE",
+    "privilege":"CREATE PROCEDURE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DELETE ANY TABLE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE CLUSTER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY INDEX"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE PUBLIC SYNONYM"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY VIEW"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY SEQUENCE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE PUBLIC DATABASE LINK"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER DATABASE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE PROFILE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"GRANT ANY PRIVILEGE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"EXECUTE ANY TYPE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"UNDER ANY TYPE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY LIBRARY"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY OPERATOR"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE DIMENSION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY DIMENSION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY EVALUATION CONTEXT"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"EXECUTE ANY EVALUATION CONTEXT"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY RULE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ANALYZE ANY DICTIONARY"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"MANAGE SCHEDULER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ADMINISTER SQL TUNING SET"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE CUBE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY CUBE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY SQL TRANSLATION PROFILE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"USE ANY JOB RESOURCE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE HIERARCHY"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY ANALYTIC VIEW"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY ANALYTIC VIEW"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DELETE ANY TABLE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY SEQUENCE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY ROLE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"GRANT ANY ROLE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER DATABASE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE MATERIALIZED VIEW"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY DIRECTORY"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY DIRECTORY"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY LIBRARY"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE INDEXTYPE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY DIMENSION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY DIMENSION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY OUTLINE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"RESUMABLE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE RULE SET"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"IMPORT FULL DATABASE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE JOB"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ADMINISTER ANY SQL TUNING SET"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CHANGE NOTIFICATION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE CUBE DIMENSION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DELETE ANY CUBE DIMENSION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"UPDATE ANY CUBE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DELETE ANY MEASURE FOLDER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"EM EXPRESS CONNECT"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY CREDENTIAL"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY ATTRIBUTE DIMENSION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANALYTIC VIEW"
+  },
+  {
+    "grantee":"SYSTEM",
+    "privilege":"SELECT ANY TABLE"
+  },
+  {
+    "grantee":"EXP_FULL_DATABASE",
+    "privilege":"EXECUTE ANY TYPE"
+  },
+  {
+    "grantee":"EXP_FULL_DATABASE",
+    "privilege":"SELECT ANY SEQUENCE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"COMMENT ANY TABLE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"ALTER ANY TABLE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP ANY SEQUENCE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP PROFILE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"ALTER ANY TYPE"
+  },
+  {
+    "grantee":"DATAPUMP_IMP_FULL_DATABASE",
+    "privilege":"SELECT ANY TABLE"
+  },
+  {
+    "grantee":"DATAPUMP_IMP_FULL_DATABASE",
+    "privilege":"DELETE ANY TABLE"
+  },
+  {
+    "grantee":"DATAPUMP_IMP_FULL_DATABASE",
+    "privilege":"AUDIT ANY"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"ALTER RESOURCE COST"
+  },
+  {
+    "grantee":"RECOVERY_CATALOG_OWNER",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"RECOVERY_CATALOG_OWNER",
+    "privilege":"CREATE TABLE"
+  },
+  {
+    "grantee":"RECOVERY_CATALOG_OWNER",
+    "privilege":"CREATE SYNONYM"
+  },
+  {
+    "grantee":"RECOVERY_CATALOG_OWNER",
+    "privilege":"CREATE SEQUENCE"
+  },
+  {
+    "grantee":"RECOVERY_CATALOG_OWNER_VPD",
+    "privilege":"DROP ANY CONTEXT"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"DROP TABLESPACE"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"GRANT ANY PRIVILEGE"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"ALTER ANY ROLE"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"ALTER PROFILE"
+  },
+  {
+    "grantee":"AUDSYS",
+    "privilege":"ANALYZE ANY DICTIONARY"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"ADMINISTER RESOURCE MANAGER"
+  },
+  {
+    "grantee":"SCHEDULER_ADMIN",
+    "privilege":"EXECUTE ANY PROGRAM"
+  },
+  {
+    "grantee":"AQ_ADMINISTRATOR_ROLE",
+    "privilege":"MANAGE ANY QUEUE"
+  },
+  {
+    "grantee":"OEM_MONITOR",
+    "privilege":"SELECT ANY DICTIONARY"
+  },
+  {
+    "grantee":"DBSNMP",
+    "privilege":"UNLIMITED TABLESPACE"
+  },
+  {
+    "grantee":"APPQOSSYS",
+    "privilege":"ADMINISTER RESOURCE MANAGER"
+  },
+  {
+    "grantee":"SYSBACKUP",
+    "privilege":"RESUMABLE"
+  },
+  {
+    "grantee":"SYSBACKUP",
+    "privilege":"SELECT ANY DICTIONARY"
+  },
+  {
+    "grantee":"SYSDG",
+    "privilege":"ALTER SESSION"
+  },
+  {
+    "grantee":"SYSDG",
+    "privilege":"ALTER SYSTEM"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"ALTER ANY INDEX"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"LOCK ANY TABLE"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"CREATE ANY PROCEDURE"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"CREATE USER"
+  },
+  {
+    "grantee":"CTXSYS",
+    "privilege":"UNLIMITED TABLESPACE"
+  },
+  {
+    "grantee":"LBACSYS",
+    "privilege":"ADMINISTER DATABASE TRIGGER"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"INSERT ANY CUBE DIMENSION"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"DELETE ANY CUBE DIMENSION"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"DROP ANY CUBE"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"INSERT ANY MEASURE FOLDER"
+  },
+  {
+    "grantee":"DV_REALM_RESOURCE",
+    "privilege":"CREATE INDEXTYPE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"CREATE ANY INDEX"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"CREATE ANY PROCEDURE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"ALTER ANY SEQUENCE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"ALTER ANY TRIGGER"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"EXECUTE ANY INDEXTYPE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"EXECUTE ANY PROCEDURE"
+  },
+  {
+    "grantee":"DV_ACCTMGR",
+    "privilege":"ALTER USER"
+  },
+  {
+    "grantee":"DV_ACCTMGR",
+    "privilege":"CREATE PROFILE"
+  },
+  {
+    "grantee":"CONNECT",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"RESOURCE",
+    "privilege":"CREATE CLUSTER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP TABLESPACE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ROLLBACK SEGMENT"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE TABLE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"BACKUP ANY TABLE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"COMMENT ANY TABLE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY CLUSTER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY INDEX"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE DATABASE LINK"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"FORCE ANY TRANSACTION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY TRIGGER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY TRIGGER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY DIRECTORY"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"QUERY REWRITE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY DIMENSION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"MANAGE ANY QUEUE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY OUTLINE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"MERGE ANY VIEW"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DEBUG CONNECT SESSION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY RULE SET"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"EXPORT FULL DATABASE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE RULE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"EXECUTE ANY CLASS"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"MANAGE ANY FILE GROUP"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ASSEMBLY"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"EXECUTE ANY ASSEMBLY"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"EXECUTE ASSEMBLY"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"SELECT ANY CUBE DIMENSION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY CUBE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"INSERT ANY MEASURE FOLDER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY CUBE BUILD PROCESS"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY HIERARCHY"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY ANALYTIC VIEW"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER SESSION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"MANAGE TABLESPACE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP TABLESPACE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ROLLBACK SEGMENT"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY TABLE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"INSERT ANY TABLE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE SYNONYM"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE SEQUENCE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"FORCE TRANSACTION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE PROCEDURE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY TRIGGER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY MATERIALIZED VIEW"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE TYPE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY LIBRARY"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"GLOBAL QUERY REWRITE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"GRANT ANY OBJECT PRIVILEGE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY EVALUATION CONTEXT"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY EVALUATION CONTEXT"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"EXPORT FULL DATABASE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY RULE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"EXECUTE ANY RULE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"MANAGE FILE GROUP"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"READ ANY FILE GROUP"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ASSEMBLY"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY ASSEMBLY"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY CUBE DIMENSION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE CUBE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"SELECT ANY CUBE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER LOCKDOWN PROFILE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE CREDENTIAL"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"USE ANY JOB RESOURCE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY ANALYTIC VIEW"
+  },
+  {
+    "grantee":"CONNECT",
+    "privilege":"SET CONTAINER"
+  },
+  {
+    "grantee":"EXP_FULL_DATABASE",
+    "privilege":"SELECT ANY TABLE"
+  },
+  {
+    "grantee":"EXP_FULL_DATABASE",
+    "privilege":"EXECUTE ANY PROCEDURE"
+  },
+  {
+    "grantee":"EXP_FULL_DATABASE",
+    "privilege":"ADMINISTER SQL MANAGEMENT OBJECT"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE ANY TRIGGER"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE PROFILE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE USER"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE ANY DIRECTORY"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE ANY OPERATOR"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"GLOBAL QUERY REWRITE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP ANY INDEX"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP ANY VIEW"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP ANY LIBRARY"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP ANY OPERATOR"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"RESUMABLE"
+  },
+  {
+    "grantee":"GSMUSER_ROLE",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"DATAPUMP_IMP_FULL_DATABASE",
+    "privilege":"ALTER USER"
+  },
+  {
+    "grantee":"DATAPUMP_IMP_FULL_DATABASE",
+    "privilege":"ALTER DATABASE"
+  },
+  {
+    "grantee":"DATAPUMP_IMP_FULL_DATABASE",
+    "privilege":"ALTER PROFILE"
+  },
+  {
+    "grantee":"DATAPUMP_IMP_FULL_DATABASE",
+    "privilege":"GRANT ANY OBJECT PRIVILEGE"
+  },
+  {
+    "grantee":"EXP_FULL_DATABASE",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"EXP_FULL_DATABASE",
+    "privilege":"CREATE TABLE"
+  },
+  {
+    "grantee":"EXP_FULL_DATABASE",
+    "privilege":"ANALYZE ANY"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DELETE ANY TABLE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"GRANT ANY OBJECT PRIVILEGE"
+  },
+  {
+    "grantee":"RECOVERY_CATALOG_OWNER",
+    "privilege":"CREATE TRIGGER"
+  },
+  {
+    "grantee":"RECOVERY_CATALOG_OWNER_VPD",
+    "privilege":"CREATE ANY SYNONYM"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"GRANT ANY OBJECT PRIVILEGE"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"GRANT ANY ROLE"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"CREATE USER"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"SET CONTAINER"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"ADMINISTER RESOURCE MANAGER"
+  },
+  {
+    "grantee":"AUDSYS",
+    "privilege":"CREATE JOB"
+  },
+  {
+    "grantee":"SCHEDULER_ADMIN",
+    "privilege":"CREATE JOB"
+  },
+  {
+    "grantee":"SCHEDULER_ADMIN",
+    "privilege":"CREATE ANY JOB"
+  },
+  {
+    "grantee":"AQ_ADMINISTRATOR_ROLE",
+    "privilege":"CREATE EVALUATION CONTEXT"
+  },
+  {
+    "grantee":"AQ_ADMINISTRATOR_ROLE",
+    "privilege":"CREATE RULE"
+  },
+  {
+    "grantee":"OEM_MONITOR",
+    "privilege":"CREATE JOB"
+  },
+  {
+    "grantee":"DBSNMP",
+    "privilege":"SELECT ANY DICTIONARY"
+  },
+  {
+    "grantee":"APPQOSSYS",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"SYSBACKUP",
+    "privilege":"UNLIMITED TABLESPACE"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"CREATE ANY CREDENTIAL"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"ALTER ANY TABLE"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"EXEMPT ACCESS POLICY"
+  },
+  {
+    "grantee":"GSMCATUSER",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"XDB",
+    "privilege":"CREATE LIBRARY"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"DROP ANY PROCEDURE"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"UPDATE ANY TABLE"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"DROP ANY SEQUENCE"
+  },
+  {
+    "grantee":"CTXSYS",
+    "privilege":"CREATE JOB"
+  },
+  {
+    "grantee":"MDSYS",
+    "privilege":"CREATE PUBLIC SYNONYM"
+  },
+  {
+    "grantee":"DVSYS",
+    "privilege":"UNLIMITED TABLESPACE"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"DROP ANY TABLE"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"CREATE ANY MEASURE FOLDER"
+  },
+  {
+    "grantee":"DV_REALM_RESOURCE",
+    "privilege":"CREATE SEQUENCE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"CREATE ANY CLUSTER"
+  },
+  {
+    "grantee":"DV_ACCTMGR",
+    "privilege":"DROP PROFILE"
+  },
+  {
+    "grantee":"DATAPATCH_ROLE",
+    "privilege":"ALTER SESSION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE USER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ROLLBACK SEGMENT"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"SELECT ANY TABLE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"REDEFINE ANY TABLE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY CLUSTER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY INDEX"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE SYNONYM"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP PUBLIC SYNONYM"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY SEQUENCE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ROLE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY ROLE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER RESOURCE COST"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ANALYZE ANY"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE MATERIALIZED VIEW"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY MATERIALIZED VIEW"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE OPERATOR"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"UNDER ANY TABLE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY OUTLINE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ADMINISTER RESOURCE MANAGER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"RESUMABLE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DEBUG ANY PROCEDURE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"FLASHBACK ANY TABLE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"EXECUTE ANY RULE SET"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY RULE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"MANAGE FILE GROUP"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"READ ANY FILE GROUP"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE EXTERNAL JOB"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY EDITION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY ASSEMBLY"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE CUBE DIMENSION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"INSERT ANY CUBE DIMENSION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY MEASURE FOLDER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ADMINISTER SQL MANAGEMENT OBJECT"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY SQL TRANSLATION PROFILE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"EM EXPRESS CONNECT"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY HIERARCHY"
+  },
+  {
+    "grantee":"SYSTEM",
+    "privilege":"DEQUEUE ANY QUEUE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER SYSTEM"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"AUDIT SYSTEM"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER TABLESPACE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE USER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ROLLBACK SEGMENT"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY TABLE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY SYNONYM"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY SEQUENCE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"SELECT ANY SEQUENCE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE PUBLIC DATABASE LINK"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY PROCEDURE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY PROCEDURE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE TRIGGER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY TRIGGER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY MATERIALIZED VIEW"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY TYPE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY TYPE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"UNDER ANY TYPE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE LIBRARY"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY LIBRARY"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY OPERATOR"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY OPERATOR"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY INDEXTYPE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"UNDER ANY TABLE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ADMINISTER DATABASE TRIGGER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY RULE SET"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"EXECUTE ANY PROGRAM"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"MANAGE SCHEDULER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY CUBE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE MEASURE FOLDER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"UPDATE ANY CUBE BUILD PROCESS"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"USE ANY SQL TRANSLATION PROFILE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ATTRIBUTE DIMENSION"
+  },
+  {
+    "grantee":"AUDIT_ADMIN",
+    "privilege":"AUDIT ANY"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE ANY PROCEDURE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"EXECUTE ANY TYPE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"ADMINISTER DATABASE TRIGGER"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP ANY CLUSTER"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP ANY SYNONYM"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP TABLESPACE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP USER"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"ALTER ANY PROCEDURE"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"MANAGE SCHEDULER"
+  },
+  {
+    "grantee":"DATAPUMP_IMP_FULL_DATABASE",
+    "privilege":"AUDIT SYSTEM"
+  },
+  {
+    "grantee":"DATAPUMP_IMP_FULL_DATABASE",
+    "privilege":"CREATE PROFILE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"ALTER TABLESPACE"
+  },
+  {
+    "grantee":"RECOVERY_CATALOG_OWNER_VPD",
+    "privilege":"CREATE ANY CONTEXT"
+  },
+  {
+    "grantee":"EM_EXPRESS_BASIC",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"CREATE PROFILE"
+  },
+  {
+    "grantee":"EXP_FULL_DATABASE",
+    "privilege":"ADMINISTER RESOURCE MANAGER"
+  },
+  {
+    "grantee":"AQ_ADMINISTRATOR_ROLE",
+    "privilege":"ENQUEUE ANY QUEUE"
+  },
+  {
+    "grantee":"DBSNMP",
+    "privilege":"INHERIT ANY PRIVILEGES"
+  },
+  {
+    "grantee":"DBSNMP",
+    "privilege":"CREATE TABLE"
+  },
+  {
+    "grantee":"SYSDG",
+    "privilege":"SELECT ANY DICTIONARY"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"SELECT ANY DICTIONARY"
+  },
+  {
+    "grantee":"GSMADMIN_ROLE",
+    "privilege":"ALTER SYSTEM"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"SELECT ANY TABLE"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"UNLIMITED TABLESPACE"
+  },
+  {
+    "grantee":"XDB",
+    "privilege":"DROP PUBLIC SYNONYM"
+  },
+  {
+    "grantee":"XDB",
+    "privilege":"CREATE VIEW"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"DROP ANY INDEX"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"SELECT ANY TABLE"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"DROP ANY TRIGGER"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"DROP USER"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"INHERIT ANY PRIVILEGES"
+  },
+  {
+    "grantee":"CTXSYS",
+    "privilege":"CREATE SYNONYM"
+  },
+  {
+    "grantee":"LBACSYS",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"MDSYS",
+    "privilege":"CREATE VIEW"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"SELECT ANY CUBE"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"CREATE ANY CUBE BUILD PROCESS"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"CREATE JOB"
+  },
+  {
+    "grantee":"OLAP_USER",
+    "privilege":"CREATE CUBE BUILD PROCESS"
+  },
+  {
+    "grantee":"DV_REALM_RESOURCE",
+    "privilege":"CREATE OPERATOR"
+  },
+  {
+    "grantee":"DV_REALM_RESOURCE",
+    "privilege":"CREATE PROCEDURE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"COMMENT ANY TABLE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"CREATE ANY DIMENSION"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"CREATE ANY TABLE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"ALTER ANY OPERATOR"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"ALTER ANY OUTLINE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"DELETE ANY TABLE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"INSERT ANY TABLE"
+  },
+  {
+    "grantee":"DV_ACCTMGR",
+    "privilege":"CREATE USER"
+  },
+  {
+    "grantee":"DV_ACCTMGR",
+    "privilege":"ALTER PROFILE"
+  },
+  {
+    "grantee":"RESOURCE",
+    "privilege":"CREATE TABLE"
+  },
+  {
+    "grantee":"RESOURCE",
+    "privilege":"CREATE TRIGGER"
+  },
+  {
+    "grantee":"RESOURCE",
+    "privilege":"CREATE TYPE"
+  },
+  {
+    "grantee":"RESOURCE",
+    "privilege":"CREATE OPERATOR"
+  },
+  {
+    "grantee":"RESOURCE",
+    "privilege":"CREATE INDEXTYPE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"BECOME USER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP USER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"INSERT ANY TABLE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY SYNONYM"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE VIEW"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE TYPE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"EXECUTE ANY OPERATOR"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE INDEXTYPE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"GLOBAL QUERY REWRITE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY DIMENSION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ADMINISTER DATABASE TRIGGER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"SELECT ANY DICTIONARY"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"GRANT ANY OBJECT PRIVILEGE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY RULE SET"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY RULE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"EXECUTE ANY PROGRAM"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY EDITION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE MINING MODEL"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY MINING MODEL"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY MINING MODEL"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"UPDATE ANY CUBE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER LOCKDOWN PROFILE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"SELECT ANY CUBE BUILD PROCESS"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY ATTRIBUTE DIMENSION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANALYTIC VIEW"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE TABLESPACE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE TABLE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY TABLE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"COMMENT ANY TABLE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY CLUSTER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY ROLE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"AUDIT ANY"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"FORCE ANY TRANSACTION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"EXECUTE ANY PROCEDURE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER PROFILE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP PROFILE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER RESOURCE COST"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"EXECUTE ANY INDEXTYPE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ENQUEUE ANY QUEUE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY CONTEXT"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"MERGE ANY VIEW"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DEBUG ANY PROCEDURE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY EVALUATION CONTEXT"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY JOB"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"EXECUTE ANY CLASS"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE EXTERNAL JOB"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY EDITION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY ASSEMBLY"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"EXECUTE ANY ASSEMBLY"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY MINING MODEL"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY CUBE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY CUBE BUILD PROCESS"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY SQL TRANSLATION PROFILE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY MEASURE FOLDER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE HIERARCHY"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY HIERARCHY"
+  },
+  {
+    "grantee":"SYSTEM",
+    "privilege":"GLOBAL QUERY REWRITE"
+  },
+  {
+    "grantee":"CDB_DBA",
+    "privilege":"SET CONTAINER"
+  },
+  {
+    "grantee":"EXP_FULL_DATABASE",
+    "privilege":"RESUMABLE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"BECOME USER"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE ANY SYNONYM"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE ANY VIEW"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE PUBLIC SYNONYM"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE ROLLBACK SEGMENT"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE ROLE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE TABLESPACE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"SELECT ANY TABLE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"EXECUTE ANY PROCEDURE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP PUBLIC SYNONYM"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP ANY INDEXTYPE"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"ALTER SYSTEM"
+  },
+  {
+    "grantee":"DIP",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"DATAPUMP_IMP_FULL_DATABASE",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"DATAPUMP_IMP_FULL_DATABASE",
+    "privilege":"GRANT ANY PRIVILEGE"
+  },
+  {
+    "grantee":"DATAPUMP_IMP_FULL_DATABASE",
+    "privilege":"EXECUTE ANY OPERATOR"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"GRANT ANY ROLE"
+  },
+  {
+    "grantee":"RECOVERY_CATALOG_OWNER",
+    "privilege":"CREATE CLUSTER"
+  },
+  {
+    "grantee":"RECOVERY_CATALOG_OWNER_VPD",
+    "privilege":"DROP ANY SYNONYM"
+  },
+  {
+    "grantee":"RECOVERY_CATALOG_OWNER_VPD",
+    "privilege":"ADMINISTER DATABASE TRIGGER"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"ADVISOR"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"ALTER SYSTEM"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"DROP ANY ROLE"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"ALTER USER"
+  },
+  {
+    "grantee":"AUDSYS",
+    "privilege":"SET CONTAINER"
+  },
+  {
+    "grantee":"SCHEDULER_ADMIN",
+    "privilege":"CREATE CREDENTIAL"
+  },
+  {
+    "grantee":"AQ_ADMINISTRATOR_ROLE",
+    "privilege":"DEQUEUE ANY QUEUE"
+  },
+  {
+    "grantee":"OEM_ADVISOR",
+    "privilege":"ADVISOR"
+  },
+  {
+    "grantee":"OEM_ADVISOR",
+    "privilege":"CREATE JOB"
+  },
+  {
+    "grantee":"OEM_MONITOR",
+    "privilege":"ANALYZE ANY DICTIONARY"
+  },
+  {
+    "grantee":"APPQOSSYS",
+    "privilege":"ALTER SESSION"
+  },
+  {
+    "grantee":"SYSBACKUP",
+    "privilege":"ALTER TABLESPACE"
+  },
+  {
+    "grantee":"SYSBACKUP",
+    "privilege":"AUDIT ANY"
+  },
+  {
+    "grantee":"SYSBACKUP",
+    "privilege":"CREATE ANY DIRECTORY"
+  },
+  {
+    "grantee":"SYSRAC",
+    "privilege":"ALTER SYSTEM"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"CREATE DATABASE LINK"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"DROP PUBLIC DATABASE LINK"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"CREATE ANY JOB"
+  },
+  {
+    "grantee":"GSMUSER_ROLE",
+    "privilege":"EXEMPT ACCESS POLICY"
+  },
+  {
+    "grantee":"ANONYMOUS",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"XDB",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"XDB",
+    "privilege":"CREATE PUBLIC SYNONYM"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"ALTER SESSION"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"INSERT ANY TABLE"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"UNLIMITED TABLESPACE"
+  },
+  {
+    "grantee":"OJVMSYS",
+    "privilege":"UNLIMITED TABLESPACE"
+  },
+  {
+    "grantee":"JAVADEBUGPRIV",
+    "privilege":"DEBUG ANY PROCEDURE"
+  },
+  {
+    "grantee":"CTXSYS",
+    "privilege":"SET CONTAINER"
+  },
+  {
+    "grantee":"CTXSYS",
+    "privilege":"CREATE PUBLIC SYNONYM"
+  },
+  {
+    "grantee":"CTXSYS",
+    "privilege":"DROP PUBLIC SYNONYM"
+  },
+  {
+    "grantee":"XDB",
+    "privilege":"CREATE JOB"
+  },
+  {
+    "grantee":"DVF",
+    "privilege":"CREATE PROCEDURE"
+  },
+  {
+    "grantee":"ORDSYS",
+    "privilege":"UNLIMITED TABLESPACE"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"UPDATE ANY CUBE DIMENSION"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"DELETE ANY MEASURE FOLDER"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"DROP ANY MEASURE FOLDER"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"UPDATE ANY CUBE BUILD PROCESS"
+  },
+  {
+    "grantee":"DVSYS",
+    "privilege":"CREATE ROLE"
+  },
+  {
+    "grantee":"DV_REALM_RESOURCE",
+    "privilege":"CREATE TYPE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"CREATE ANY SYNONYM"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"ALTER ANY CLUSTER"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"ALTER ANY INDEX"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"ALTER ANY MATERIALIZED VIEW"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"ALTER ANY TABLE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"DROP ANY CLUSTER"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"DROP ANY DIMENSION"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"DROP ANY INDEX"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"DROP ANY VIEW"
+  },
+  {
+    "grantee":"DV_ACCTMGR",
+    "privilege":"DROP USER"
+  },
+  {
+    "grantee":"DV_ACCTMGR",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"AUDIT SYSTEM"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY TABLE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY SEQUENCE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP PUBLIC DATABASE LINK"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"AUDIT ANY"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY TYPE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY TYPE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"EXECUTE ANY LIBRARY"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY OPERATOR"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY OPERATOR"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY INDEXTYPE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY INDEXTYPE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"EXECUTE ANY INDEXTYPE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"IMPORT FULL DATABASE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"EXECUTE ANY RULE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE JOB"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY SQL PROFILE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY SQL PROFILE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY SQL PROFILE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CHANGE NOTIFICATION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY EDITION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY ASSEMBLY"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"COMMENT ANY MINING MODEL"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY MEASURE FOLDER"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"READ ANY TABLE"
+  },
+  {
+    "grantee":"SYSTEM",
+    "privilege":"UNLIMITED TABLESPACE"
+  },
+  {
+    "grantee":"SYSTEM",
+    "privilege":"ENQUEUE ANY QUEUE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"BACKUP ANY TABLE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"LOCK ANY TABLE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"REDEFINE ANY TABLE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY CLUSTER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY SEQUENCE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ROLE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"GRANT ANY PRIVILEGE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"EXECUTE ANY LIBRARY"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"QUERY REWRITE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE DIMENSION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY DIMENSION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DEQUEUE ANY QUEUE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY OUTLINE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ADMINISTER RESOURCE MANAGER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"EXECUTE ANY EVALUATION CONTEXT"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY RULE SET"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY SQL PROFILE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ADMINISTER SQL TUNING SET"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY EDITION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY MINING MODEL"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY MINING MODEL"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY CUBE DIMENSION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY CUBE DIMENSION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"INSERT ANY MEASURE FOLDER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"UPDATE ANY CUBE DIMENSION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY SQL TRANSLATION PROFILE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY SQL TRANSLATION PROFILE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"SELECT ANY MEASURE FOLDER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"READ ANY TABLE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY ATTRIBUTE DIMENSION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY ANALYTIC VIEW"
+  },
+  {
+    "grantee":"SYSTEM",
+    "privilege":"CREATE MATERIALIZED VIEW"
+  },
+  {
+    "grantee":"AUDIT_ADMIN",
+    "privilege":"AUDIT SYSTEM"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE PUBLIC DATABASE LINK"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE ANY CONTEXT"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE ANY INDEXTYPE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP ANY TABLE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP ANY MATERIALIZED VIEW"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP ANY TYPE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"ANALYZE ANY"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP ANY SQL PROFILE"
+  },
+  {
+    "grantee":"DATAPUMP_IMP_FULL_DATABASE",
+    "privilege":"ALTER RESOURCE COST"
+  },
+  {
+    "grantee":"EXP_FULL_DATABASE",
+    "privilege":"EXEMPT REDACTION POLICY"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"GRANT ANY PRIVILEGE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"EXECUTE ANY OPERATOR"
+  },
+  {
+    "grantee":"XS_CONNECT",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"DBSFWUSER",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"ORACLE_OCM",
+    "privilege":"CREATE JOB"
+  },
+  {
+    "grantee":"RECOVERY_CATALOG_OWNER",
+    "privilege":"ALTER SESSION"
+  },
+  {
+    "grantee":"RECOVERY_CATALOG_OWNER",
+    "privilege":"CREATE DATABASE LINK"
+  },
+  {
+    "grantee":"RECOVERY_CATALOG_OWNER",
+    "privilege":"CREATE TYPE"
+  },
+  {
+    "grantee":"EM_EXPRESS_BASIC",
+    "privilege":"EM EXPRESS CONNECT"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"ADMINISTER SQL TUNING SET"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"ADMINISTER ANY SQL TUNING SET"
+  },
+  {
+    "grantee":"SYSUMF_ROLE",
+    "privilege":"ADMINISTER SQL MANAGEMENT OBJECT"
+  },
+  {
+    "grantee":"SCHEDULER_ADMIN",
+    "privilege":"EXECUTE ANY CLASS"
+  },
+  {
+    "grantee":"OEM_MONITOR",
+    "privilege":"ADVISOR"
+  },
+  {
+    "grantee":"DBSNMP",
+    "privilege":"CREATE PROCEDURE"
+  },
+  {
+    "grantee":"SYSBACKUP",
+    "privilege":"CREATE ANY CLUSTER"
+  },
+  {
+    "grantee":"SYSRAC",
+    "privilege":"ALTER DATABASE"
+  },
+  {
+    "grantee":"XDB",
+    "privilege":"UNLIMITED TABLESPACE"
+  },
+  {
+    "grantee":"XDB",
+    "privilege":"ALTER SESSION"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"SELECT ANY DICTIONARY"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"ALTER ANY INDEX"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"EXECUTE ANY TYPE"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"SELECT ANY SEQUENCE"
+  },
+  {
+    "grantee":"MDSYS",
+    "privilege":"CREATE TRIGGER"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"DELETE ANY TABLE"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"SELECT ANY CUBE DIMENSION"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"UPDATE ANY CUBE"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"CREATE SEQUENCE"
+  },
+  {
+    "grantee":"OLAP_USER",
+    "privilege":"CREATE CUBE DIMENSION"
+  },
+  {
+    "grantee":"DV_REALM_RESOURCE",
+    "privilege":"CREATE CLUSTER"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"CREATE ANY VIEW"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"DROP ANY MATERIALIZED VIEW"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"DROP ANY OPERATOR"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"DROP ANY SYNONYM"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"DROP ANY TABLE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"DROP ANY TRIGGER"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"EXECUTE ANY OPERATOR"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"MANAGE TABLESPACE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY TABLE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE SEQUENCE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"GRANT ANY ROLE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY ROLE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY PROCEDURE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY PROCEDURE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY PROCEDURE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"EXECUTE ANY PROCEDURE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY DIRECTORY"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY TYPE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY LIBRARY"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY LIBRARY"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY INDEXTYPE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ENQUEUE ANY QUEUE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DEQUEUE ANY QUEUE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ADVISOR"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY ASSEMBLY"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY CUBE DIMENSION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"CREATE ANY CUBE DIMENSION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"ALTER ANY CUBE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"DROP ANY CUBE BUILD PROCESS"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"UPDATE ANY CUBE DIMENSION"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"USE ANY SQL TRANSLATION PROFILE"
+  },
+  {
+    "grantee":"DBA",
+    "privilege":"SET CONTAINER"
+  },
+  {
+    "grantee":"SYSTEM",
+    "privilege":"MANAGE ANY QUEUE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"RESTRICTED SESSION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"BECOME USER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ROLLBACK SEGMENT"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"SELECT ANY TABLE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"UPDATE ANY TABLE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY INDEX"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY INDEX"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE DATABASE LINK"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY PROCEDURE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ANALYZE ANY"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY MATERIALIZED VIEW"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY TYPE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"EXECUTE ANY OPERATOR"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DROP ANY INDEXTYPE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"MANAGE ANY QUEUE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY CONTEXT"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY OUTLINE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"DEBUG CONNECT ANY"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE EVALUATION CONTEXT"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ADVISOR"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY SQL PROFILE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE MINING MODEL"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"SELECT ANY MINING MODEL"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"COMMENT ANY MINING MODEL"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"INSERT ANY CUBE DIMENSION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ADMINISTER SQL MANAGEMENT OBJECT"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE SQL TRANSLATION PROFILE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE PLUGGABLE DATABASE"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"SET CONTAINER"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY CUBE BUILD PROCESS"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"ALTER ANY ATTRIBUTE DIMENSION"
+  },
+  {
+    "grantee":"SYS",
+    "privilege":"CREATE ANY HIERARCHY"
+  },
+  {
+    "grantee":"EXP_FULL_DATABASE",
+    "privilege":"BACKUP ANY TABLE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE ANY INDEX"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE ANY MATERIALIZED VIEW"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"AUDIT ANY"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"CREATE ANY DIMENSION"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP ANY OUTLINE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP ANY TRIGGER"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP PUBLIC DATABASE LINK"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP ANY ROLE"
+  },
+  {
+    "grantee":"IMP_FULL_DATABASE",
+    "privilege":"DROP ANY DIMENSION"
+  },
+  {
+    "grantee":"DATAPUMP_EXP_FULL_DATABASE",
+    "privilege":"CREATE TABLE"
+  },
+  {
+    "grantee":"EXP_FULL_DATABASE",
+    "privilege":"FLASHBACK ANY TABLE"
+  },
+  {
+    "grantee":"ORACLE_OCM",
+    "privilege":"SET CONTAINER"
+  },
+  {
+    "grantee":"EM_EXPRESS_ALL",
+    "privilege":"ALTER TABLESPACE"
+  },
+  {
+    "grantee":"AUDSYS",
+    "privilege":"ALTER SESSION"
+  },
+  {
+    "grantee":"AUDSYS",
+    "privilege":"SELECT ANY DICTIONARY"
+  },
+  {
+    "grantee":"AUDSYS",
+    "privilege":"RESTRICTED SESSION"
+  },
+  {
+    "grantee":"SYSUMF_ROLE",
+    "privilege":"ADVISOR"
+  },
+  {
+    "grantee":"SYS$UMF",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"SCHEDULER_ADMIN",
+    "privilege":"CREATE EXTERNAL JOB"
+  },
+  {
+    "grantee":"SCHEDULER_ADMIN",
+    "privilege":"CREATE ANY CREDENTIAL"
+  },
+  {
+    "grantee":"OEM_MONITOR",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"OEM_MONITOR",
+    "privilege":"MANAGE ANY QUEUE"
+  },
+  {
+    "grantee":"SYSBACKUP",
+    "privilege":"ALTER SESSION"
+  },
+  {
+    "grantee":"SYSBACKUP",
+    "privilege":"CREATE ANY TABLE"
+  },
+  {
+    "grantee":"SYSDG",
+    "privilege":"ALTER DATABASE"
+  },
+  {
+    "grantee":"SYSRAC",
+    "privilege":"ALTER SESSION"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"INHERIT ANY PRIVILEGES"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"ALTER DATABASE"
+  },
+  {
+    "grantee":"GSMADMIN_INTERNAL",
+    "privilege":"CREATE JOB"
+  },
+  {
+    "grantee":"XDB",
+    "privilege":"INHERIT ANY PRIVILEGES"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"EXECUTE ANY PROCEDURE"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"DELETE ANY TABLE"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"DROP ANY TABLE"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"CREATE ANY VIEW"
+  },
+  {
+    "grantee":"WMSYS",
+    "privilege":"DROP ANY VIEW"
+  },
+  {
+    "grantee":"CTXSYS",
+    "privilege":"CREATE SESSION"
+  },
+  {
+    "grantee":"CTXSYS",
+    "privilege":"ALTER SESSION"
+  },
+  {
+    "grantee":"CTXSYS",
+    "privilege":"CREATE VIEW"
+  },
+  {
+    "grantee":"MDSYS",
+    "privilege":"CREATE TABLE"
+  },
+  {
+    "grantee":"MDSYS",
+    "privilege":"CREATE ANY SEQUENCE"
+  },
+  {
+    "grantee":"MDSYS",
+    "privilege":"ADMINISTER DATABASE TRIGGER"
+  },
+  {
+    "grantee":"DVSYS",
+    "privilege":"CREATE ANY CONTEXT"
+  },
+  {
+    "grantee":"DVSYS",
+    "privilege":"DROP ANY CONTEXT"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"CREATE ANY TABLE"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"INSERT ANY TABLE"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"CREATE ANY CUBE"
+  },
+  {
+    "grantee":"OLAP_DBA",
+    "privilege":"CREATE ANY VIEW"
+  },
+  {
+    "grantee":"OLAP_USER",
+    "privilege":"CREATE MEASURE FOLDER"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"CREATE ANY INDEXTYPE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"CREATE ANY TYPE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"ALTER ANY INDEXTYPE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"DROP ANY INDEXTYPE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"DROP ANY OUTLINE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"DROP ANY SEQUENCE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"SELECT ANY TABLE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"UPDATE ANY TABLE"
+  },
+  {
+    "grantee":"DV_REALM_OWNER",
+    "privilege":"EXECUTE ANY TYPE"
+  }
+]

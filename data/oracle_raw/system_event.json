@@ -1,0 +1,212 @@
+[
+  {
+    "event":"Disk file operations I\/O",
+    "total_waits":71,
+    "time_waited":2
+  },
+  {
+    "event":"control file sequential read",
+    "total_waits":567,
+    "time_waited":2
+  },
+  {
+    "event":"control file parallel write",
+    "total_waits":436,
+    "time_waited":21
+  },
+  {
+    "event":"read by other session",
+    "total_waits":3,
+    "time_waited":0
+  },
+  {
+    "event":"log file sync",
+    "total_waits":23,
+    "time_waited":3
+  },
+  {
+    "event":"db file sequential read",
+    "total_waits":3237,
+    "time_waited":109
+  },
+  {
+    "event":"db file scattered read",
+    "total_waits":202,
+    "time_waited":12
+  },
+  {
+    "event":"db file parallel read",
+    "total_waits":4,
+    "time_waited":2
+  },
+  {
+    "event":"sort segment request",
+    "total_waits":1,
+    "time_waited":100
+  },
+  {
+    "event":"index (re)build lock or pin object",
+    "total_waits":102,
+    "time_waited":0
+  },
+  {
+    "event":"row cache mutex",
+    "total_waits":62,
+    "time_waited":6
+  },
+  {
+    "event":"cursor: pin S",
+    "total_waits":10,
+    "time_waited":2
+  },
+  {
+    "event":"cursor: pin S wait on X",
+    "total_waits":2,
+    "time_waited":1
+  },
+  {
+    "event":"latch: shared pool",
+    "total_waits":552,
+    "time_waited":18
+  },
+  {
+    "event":"library cache load lock",
+    "total_waits":1,
+    "time_waited":0
+  },
+  {
+    "event":"library cache: mutex X",
+    "total_waits":78,
+    "time_waited":4
+  },
+  {
+    "event":"library cache: bucket mutex X",
+    "total_waits":33,
+    "time_waited":5
+  },
+  {
+    "event":"PX Deq Credit: need buffer",
+    "total_waits":20,
+    "time_waited":1
+  },
+  {
+    "event":"PX Deq Credit: send blkd",
+    "total_waits":9,
+    "time_waited":1
+  },
+  {
+    "event":"PX Deq: Parse Reply",
+    "total_waits":144,
+    "time_waited":57
+  },
+  {
+    "event":"PX Deq: Execute Reply",
+    "total_waits":648,
+    "time_waited":191
+  },
+  {
+    "event":"PX Deq: Execution Msg",
+    "total_waits":596,
+    "time_waited":499
+  },
+  {
+    "event":"PX Deq: Table Q Normal",
+    "total_waits":170,
+    "time_waited":230
+  },
+  {
+    "event":"SQL*Net message to client",
+    "total_waits":827,
+    "time_waited":0
+  },
+  {
+    "event":"SQL*Net more data to client",
+    "total_waits":8,
+    "time_waited":0
+  },
+  {
+    "event":"SQL*Net message from client",
+    "total_waits":836,
+    "time_waited":291973
+  },
+  {
+    "event":"SQL*Net break\/reset to client",
+    "total_waits":44,
+    "time_waited":3
+  },
+  {
+    "event":"latch free",
+    "total_waits":10,
+    "time_waited":1
+  },
+  {
+    "event":"latch: call allocation",
+    "total_waits":22,
+    "time_waited":0
+  },
+  {
+    "event":"PGA memory operation",
+    "total_waits":3703,
+    "time_waited":7
+  },
+  {
+    "event":"latch: enqueue hash chains",
+    "total_waits":2,
+    "time_waited":0
+  },
+  {
+    "event":"asynch descriptor resize",
+    "total_waits":18,
+    "time_waited":0
+  },
+  {
+    "event":"resmgr:plan change",
+    "total_waits":1,
+    "time_waited":0
+  },
+  {
+    "event":"reliable message",
+    "total_waits":1,
+    "time_waited":0
+  },
+  {
+    "event":"latch: active service list",
+    "total_waits":15,
+    "time_waited":0
+  },
+  {
+    "event":"PX qref latch",
+    "total_waits":1,
+    "time_waited":0
+  },
+  {
+    "event":"PX Deq: Join ACK",
+    "total_waits":144,
+    "time_waited":27
+  },
+  {
+    "event":"PX Deq Credit: free buffer",
+    "total_waits":5,
+    "time_waited":0
+  },
+  {
+    "event":"PX Deq: Signal ACK EXT",
+    "total_waits":144,
+    "time_waited":3
+  },
+  {
+    "event":"PX Deq: Slave Session Stats",
+    "total_waits":288,
+    "time_waited":3
+  },
+  {
+    "event":"enq: PS - contention",
+    "total_waits":67,
+    "time_waited":1
+  },
+  {
+    "event":"latch: parallel query alloc buffer",
+    "total_waits":2,
+    "time_waited":0
+  }
+]
