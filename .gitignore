@@ -15,3 +15,6 @@ chroma_db/
 
 # vs code folder
 .vscode/
+
+.DS_Store
+

@@ -1,47 +1,163 @@
 # Plateforme Oracle IA – Supervision, Sécurité et Optimisation Intelligente
 
-**Réaliser par : Achraf EL AZZOUZI & Mehdi LAGHRISSI**
+**Réalisé par : Achraf EL AZZOUZI & Mehdi LAGHRISSI**
 
-## Introduction
+---
 
-Ce projet présente une plateforme web innovante développée avec Python et Streamlit, dédiée aux administrateurs de bases de données Oracle (DBA). L'objectif principal est de centraliser la supervision des systèmes Oracle tout en automatisant l'analyse grâce à l'intelligence artificielle (IA), via un modèle de langage (LLM). Cette solution vise à simplifier les tâches complexes de gestion, d'audit et d'optimisation, en offrant une interface intuitive et des recommandations intelligentes.
+## 1. Présentation du projet
 
-## Modules Fonctionnels
+Cette plateforme est une application web développée en **Python + Streamlit**, destinée aux **DBA Oracle**, visant à centraliser :
 
-La plateforme est organisée autour de six modules principaux, chacun répondant à un besoin spécifique des DBA :
+- la **supervision**
+- l’**audit de sécurité**
+- l’**optimisation des performances**
+- la **gestion des sauvegardes et restaurations**
 
-### Dashboard Global
+L’analyse est enrichie par une **IA (LLM)** qui génère automatiquement :
 
-Ce module offre une vue d'ensemble synthétique de l'état du système Oracle. Il affiche des indicateurs clés tels que le niveau de sécurité, la disponibilité des services et l'état des sauvegardes, permettant une surveillance rapide et centralisée.
+- des scores,
+- des diagnostics,
+- des recommandations exploitables.
 
-### Audit de Sécurité Oracle
+---
 
-Il analyse en profondeur les utilisateurs, rôles, privilèges et configurations système. Un score de sécurité est calculé automatiquement, avec détection des risques potentiels et recommandations générées par l'IA pour renforcer la protection des données.
+## 2. Modules Fonctionnels (vue synthétique)
 
-### Optimisation des Performances
+- **Dashboard global** : état général (sécurité, performance, sauvegardes)
+- **Audit de sécurité Oracle** : utilisateurs, rôles, privilèges, risques
+- **Optimisation des performances** : requêtes lentes et recommandations SQL
+- **Stratégie de sauvegarde intelligente** : RPO / RTO / budget
+- **Assistant de restauration** : playbooks de reprise (PITR, crash, tables)
+- **Chatbot IA Oracle** : interface conversationnelle orientée DBA
 
-Ce module examine les requêtes lentes et propose des recommandations SQL automatiques pour améliorer les performances. Il aide à identifier les goulots d'étranglement et suggère des optimisations adaptées au contexte opérationnel.
+---
 
-### Stratégie de Sauvegarde Intelligente
+## 3. Architecture (résumé)
 
-En tenant compte des objectifs de point de récupération (RPO), de temps de restauration (RTO) et du budget disponible, ce module génère un plan de sauvegarde personnalisé. Il recommande des stratégies adaptées aux besoins spécifiques de l'entreprise.
+- Base de données **Oracle 19c**
+- Extraction via **SQLAlchemy + oracledb**
+- Données stockées en **JSON / CSV**
+- IA utilisée comme **moteur d’analyse central**
+- Application Streamlit comme interface unifiée
 
-### Assistant de Restauration
+---
 
-Face à un incident, cet outil produit des playbooks détaillés pour la reprise : restauration point-in-time (PITR), récupération de tables spécifiques ou récupération complète après un crash. Il fournit un support décisionnel en temps réel pour minimiser les interruptions.
+## 4. Environnement Oracle (Docker)
 
-### Chatbot IA Oracle
+### Image utilisée
 
-Le chatbot comprend les intentions des utilisateurs en langage naturel et les redirige automatiquement vers le module approprié. Il offre une assistance interactive pour répondre aux questions des DBA, facilitant l'accès aux fonctionnalités sans navigation complexe.
+```text
+oracle/database:19.3.0-ee
+```
 
-## Architecture
+### Configuration recommandée (obligatoire)
 
-L'architecture de la plateforme est modulaire et flexible, permettant à chaque module de fonctionner de manière indépendante. Les rapports générés sont stockés sous forme de fichiers JSON ou Markdown, assurant une traçabilité et une réutilisabilité. Le moteur d'IA (LLM) est intégré comme couche d'analyse centrale, traitant les données pour produire des recommandations pertinentes et contextuelles.
+```bash
+docker run -d \
+  --name oracle19 \
+  --privileged \
+  -m 6g \
+  -p 1521:1521 \
+  -p 5500:5500 \
+  -v oracle_data:/opt/oracle/oradata \
+  -e ORACLE_SID=ORCLCDB \
+  -e ORACLE_PDB=ORCLPDB1 \
+  -e ORACLE_PWD=oracle \
+  oracle/database:19.3.0-ee
+```
 
-## Valeur Ajoutée
+### Pourquoi ces réglages
 
-Cette plateforme apporte une valeur significative aux DBA en réduisant considérablement le temps consacré aux tâches répétitives et en minimisant les erreurs humaines. Elle centralise les décisions critiques dans une interface unique, tout en intégrant l'IA pour une prise de décision assistée. Les recommandations automatiques améliorent l'efficacité opérationnelle, renforçant ainsi la sécurité, les performances et la résilience des systèmes Oracle.
+| Élément        | Raison                  |
+| -------------- | ----------------------- |
+| `--privileged` | évite ORA-00800 / VKTM  |
+| `-m 6g`        | évite l’OOM Killer      |
+| `ORCLCDB`      | CDB racine              |
+| `ORCLPDB1`     | PDB applicative         |
+| volume Docker  | persistance des données |
 
-## Conclusion
+---
 
-En résumé, la Plateforme Oracle IA transforme la gestion des bases de données en un processus intelligent et automatisé, offrant aux DBA un outil puissant pour superviser, sécuriser et optimiser leurs environnements. L'apport de l'IA se manifeste par des analyses prédictives et des suggestions personnalisées, ouvrant des perspectives prometteuses telles que l'intégration dans le cloud, l'extension vers les centres d'opérations de sécurité (SOC) et l'adoption des pratiques AIOps pour une gestion proactive et scalable. Ce projet démontre le potentiel de l'IA pour révolutionner les pratiques IT traditionnelles.
+## 5. CDB vs PDB (point clé)
+
+👉 **Les utilisateurs applicatifs doivent être créés dans le PDB**, pas dans le CDB.
+
+```sql
+SHOW CON_NAME;
+-- doit être ORCLPDB1
+```
+
+Si nécessaire :
+
+```sql
+ALTER SESSION SET CONTAINER = ORCLPDB1;
+```
+
+---
+
+## 6. Création de l’utilisateur applicatif
+
+### Création
+
+```sql
+CREATE USER oracle_ai IDENTIFIED BY oracle_ai_pwd;
+GRANT CREATE SESSION TO oracle_ai;
+```
+
+### Droits nécessaires (lecture & analyse)
+
+```sql
+GRANT SELECT ANY DICTIONARY TO oracle_ai;
+GRANT SELECT_CATALOG_ROLE TO oracle_ai;
+
+GRANT SELECT ON V_$SQL TO oracle_ai;
+GRANT SELECT ON V_$SQLSTATS TO oracle_ai;
+GRANT SELECT ON V_$SQL_PLAN TO oracle_ai;
+GRANT SELECT ON V_$SYSTEM_EVENT TO oracle_ai;
+GRANT SELECT ON UNIFIED_AUDIT_TRAIL TO oracle_ai;
+```
+
+⚠️ Les vues `V$` sont en réalité des synonymes vers `V_$`.
+
+---
+
+## 7. Connexion depuis l’application Python
+
+### Driver utilisé
+
+- `oracledb` (driver officiel Oracle)
+- intégré à SQLAlchemy
+
+### URL de connexion
+
+```python
+oracle+oracledb://oracle_ai:oracle_ai_pwd@localhost:1521/?service_name=ORCLPDB1
+```
+
+---
+
+## 8. Point d’attention SQLAlchemy
+
+Les requêtes doivent être encapsulées avec `text()` :
+
+```python
+from sqlalchemy import text
+
+conn.execute(text("SELECT sysdate FROM dual"))
+```
+
+---
+
+## 9. Valeur ajoutée du projet
+
+- Centralisation complète des décisions DBA
+- Réduction des tâches manuelles répétitives
+- Analyse intelligente et contextualisée
+- Base solide pour une évolution vers **AIOps / SOC / Cloud**
+
+---
+
+## 10. Conclusion
+
+La Plateforme Oracle IA démontre comment l’IA peut transformer la gestion des bases Oracle en un processus **proactif, intelligent et assisté**, tout en restant **compatible avec les pratiques DBA classiques**.
+Elle constitue une fondation robuste pour des systèmes de supervision modernes et évolutifs.
