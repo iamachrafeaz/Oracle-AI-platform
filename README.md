@@ -56,7 +56,7 @@ oracle/database:19.3.0-ee
 docker run -d \
   --name oracle19 \
   --privileged \
-  -m 6g \
+  -m 2g \
   -p 1521:1521 \
   -p 5500:5500 \
   -v oracle_data:/opt/oracle/oradata \
@@ -71,7 +71,7 @@ docker run -d \
 | Élément        | Raison                  |
 | -------------- | ----------------------- |
 | `--privileged` | évite ORA-00800 / VKTM  |
-| `-m 6g`        | évite l’OOM Killer      |
+| `-m 2g`        | évite l’OOM Killer      |
 | `ORCLCDB`      | CDB racine              |
 | `ORCLPDB1`     | PDB applicative         |
 | volume Docker  | persistance des données |
@@ -153,7 +153,6 @@ conn.execute(text("SELECT sysdate FROM dual"))
 - Centralisation complète des décisions DBA
 - Réduction des tâches manuelles répétitives
 - Analyse intelligente et contextualisée
-- Base solide pour une évolution vers **AIOps / SOC / Cloud**
 
 ---
 
