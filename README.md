@@ -134,6 +134,8 @@ GRANT SELECT ON UNIFIED_AUDIT_TRAIL TO oracle_ai;
 
 ### URL de connexion
 
+Dans le fichier `src/modules/data_extractor.py` :
+
 ```python
 oracle+oracledb://oracle_ai:oracle_ai_pwd@localhost:1521/?service_name=ORCLPDB1
 ```
