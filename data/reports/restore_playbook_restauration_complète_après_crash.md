@@ -1,66 +1,71 @@
 # Playbook de Restauration & Récupération Oracle
 
 ## 1. Introduction
-Ce playbook décrit les étapes à suivre pour effectuer une restauration complète d’une base Oracle après un crash, en partant du principe que des sauvegardes RMAN sont disponibles.
+Ce playbook décrit les étapes pour restaurer une base de données Oracle à l’état complet après un crash, en utilisant les backups RMAN disponibles. Il s’applique lorsque la date/heure cible (PITR), la table spécifique et la ligne spécifique ne sont pas nécessaires ou non disponibles.
 
 ## 2. Étapes détaillées
-1. **Préparation**  
-   - Vérifier l’intégrité des sauvegardes RMAN (`VALIDATE`).  
-   - S’assurer que le répertoire de stockage (tape, disque, etc.) est accessible.  
-2. **Arrêt de la base**  
-   - Mettre la base en mode `MOUNT` ou `STARTUP MOUNT` via SQL*Plus.  
-3. **Connexion à RMAN**  
-   - `rman target / catalog rman/cat_pwd@catdb` (si un catalog RMAN est utilisé).  
-4. **Restauration complète**  
-   - `RUN { RESTORE DATABASE; }`  
-5. **Récupération**  
-   - `RUN { RECOVER DATABASE; }`  
-   - Si des logs de redo sont manquants, arrêter la récupération après la dernière sauvegarde disponible.  
-6. **Ouverture de la base**  
-   - `ALTER DATABASE OPEN RESETLOGS;` (si un restore a changé le nombre de redo logs).  
-7. **Vérification**  
-   - Consulter les logs RMAN (`SHOW ALL`).  
-   - Exécuter des requêtes de test sur des tables critiques.  
+1. **Préparer l’environnement de restauration**  
+   1.1. Vérifier l’état du serveur Oracle et du stockage.  
+   1.2. Créer un répertoire de destination temporaire (`$ORACLE_HOME/backup_restore`).  
+2. **Démarrer une session RMAN**  
+   2.1. Connexion à la cible (`target sys/password`).  
+   2.2. Connexion à l’archive destination (`archivelog destination sys/password`).  
+3. **Restaurer la base de données complète**  
+   3.1. Restaurer les fichiers de contrôle, les fichiers de données et les logs de redo.  
+4. **Récupérer les fichiers**  
+   4.1. Exécuter la récupération complète (ou récupération des fichiers de redo).  
+5. **Redémarrer la base de données**  
+   5.1. Mettre la base en mode `MOUNT`.  
+   5.2. Mettre la base en mode `OPEN`.  
+6. **Vérifier l’intégrité et le bon fonctionnement**  
+   6.1. Vérifier les journaux d’alerte et les rapports RMAN.  
+   6.2. Exécuter des requêtes de test pour s’assurer que la base est opérationnelle.  
+7. **Nettoyer les ressources temporaires**  
+   7.1. Supprimer ou archiver les fichiers de restauration temporaires.  
 
 ## 3. Commandes RMAN
 ```sql
--- Connexion à la base cible et au catalogue RMAN
-rman target / catalog rman_user/rman_pwd@catdb
+-- 1. Préparer l'environnement
+!mkdir -p $ORACLE_HOME/backup_restore
+!chmod 700 $ORACLE_HOME/backup_restore
 
--- Validation des sauvegardes
-RUN {
-  VALIDATE DATABASE;
-}
+-- 2. Connexion RMAN
+rman target sys/your_password @target_connect
+rman target sys/your_password archivelog destination sys/your_password
 
--- Restauration complète de la base
-RUN {
-  RESTORE DATABASE;
-}
+-- 3. Restaurer la base complète
+RESTORE DATABASE;
+-- (Optionnel) Restaurer les fichiers de contrôle
+-- RESTORE CONTROLFILE FROM BACKUP CONTROLFILE;
 
--- Récupération de la base
-RUN {
-  RECOVER DATABASE;
-}
+-- 4. Récupérer les fichiers
+RECOVER DATABASE;
 
--- Ouverture de la base en mode RESETLOGS
-ALTER DATABASE OPEN RESETLOGS;
+-- 5. Redémarrer la base
+ALTER DATABASE MOUNT;
+ALTER DATABASE OPEN;
+
+-- 6. Vérifier l’état
+ARCHIVE LOG LIST;
 ```
 
 ## 4. Points de validation
-- Vérification de l’intégrité des sauvegardes (`VALIDATE`).  
-- Confirmation que le catalogue RMAN contient les métadonnées correctes.  
-- Vérification du journal RMAN (`SHOW ALL`) pour l’absence d’erreurs critiques.  
-- Test de connectivité via SQL*Plus après ouverture.  
-- Exécution de requêtes SELECT sur des tables clés pour valider la cohérence des données.
+- **État de la base** : `SELECT status FROM v$instance;` doit afficher `OPEN`.
+- **Fichiers de redo** : Aucun journal d’erreur `ORA-` dans `alert.log`.
+- **Tablespaces** : `SELECT tablespace_name, status FROM dba_tablespaces;` doit indiquer `OPEN`.
+- **Consistance** : Vérifier la consistance d’une table critique (ex. `SELECT COUNT(*) FROM <table>;`).
+- **Performance** : Mesurer le temps de réponse d’une requête de test.
 
 ## 5. Estimation du temps
-| Étape | Durée approximative |
+| Tâche | Durée approximative |
 |-------|---------------------|
-| Préparation & validation | 15–30 min |
-| Arrêt de la base | 5 min |
-| Restauration complète | 45 min–2 h (selon la taille) |
-| Récupération | 15–45 min |
-| Ouverture & vérifications | 10–20 min |
-| **Total** | **1–3 h** |
+| Préparer l’environnement | 5 min |
+| Connexion RMAN | 2 min |
+| Restaurer la base | 30‑60 min (selon taille) |
+| Récupération | 15‑30 min |
+| Redémarrage | 5 min |
+| Validation | 10 min |
+| Nettoyage | 5 min |
+| **Total** | **≈ 1h à 1h30** |
 
 ---

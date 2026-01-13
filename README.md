@@ -44,6 +44,10 @@ L’analyse est enrichie par une **IA (LLM)** qui génère automatiquement :
 
 ## 4. Environnement Oracle (Docker)
 
+### Installer les dependencies
+
+`pip install -r requirements.txt`
+
 ### Image utilisée
 
 ```text

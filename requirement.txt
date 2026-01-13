@@ -1,0 +1,19 @@
+# Core
+python-dotenv>=1.0.0
+pyyaml>=6.0
+
+# LLM
+openai>=1.10.0
+
+# Data
+pandas>=2.0.0
+
+# UI
+streamlit>=1.30.0
+
+# RAG / Vector DB
+chromadb>=0.4.22
+sentence-transformers>=2.2.2
+
+# Database
+sqlalchemy>=2.0.0
